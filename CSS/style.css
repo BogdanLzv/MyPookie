@@ -1,7 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
+@font-face {
+  font-family: Britannic-Bold;
+  src: url("Fonts/Britannic Bold Regular.ttf");
+}
+
+body {
+  background-image: url("Images/Cat and Dog.jpg");
+  background-size: cover;
+  display: inline;
+}
+
+#logo {
+  height: 80px;
+  position: absolute;
+  top: 10px;
+}
+
+header {
+  width: inherit;
+  display: inline;
+}
+
+header h1 {
+  position: relative;
+  text-align: center;
+  top: 15px;
+  font-size: 60px;
+  font-family: "Britannic-Bold";
+  color: white;
+  text-shadow: 1px 0 10px  black;
+}
+
+aside h2 {
+  position: relative;
+  right: 370px;
+  top: 150px;
+  font-family: "Britannic-Bold";
+  font-size: 43px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 0 10px  black;
+}
