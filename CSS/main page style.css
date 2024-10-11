@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: black;
+  }
+
+  #logo {
+    position: relative;
+    height: 80px;
+    top: 20px;
+  }
+
+  header {
+    background: white;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid crimson;
+  }
+
+  #searchBar {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background: black;
+    width: 450px;
+    height: 38px;
+    bottom: 45px;
+  }
+
+  #searchBar input {
+    width: inherit;
+    height: inherit;
+    outline: none;
+  }
+
+
