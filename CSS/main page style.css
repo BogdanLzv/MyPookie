@@ -2,39 +2,148 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
-    background: black;
-  }
+@font-face {
+  font-family: Britannic-Bold;
+  src: url("Fonts/Britannic Bold Regular.ttf");
+}
 
-  #logo {
+body {
+    background: floralwhite;
+}
+
+#logo {
     position: relative;
     height: 80px;
     top: 20px;
-  }
+}
 
-  header {
+header {
     background: white;
     width: 100%;
-    height: 140px;
-    border-bottom: 2px solid crimson;
-  }
+    height: 130px;
+    border-bottom: 2px solid darkmagenta;
+    position: sticky;
+    top: 0;
+}
 
-  #searchBar {
+  /* SearchBar form ˇˇˇˇˇˇ */
+
+#searchBar {
     position: relative;
     margin: 0 auto;
-    text-align: center;
-    background: black;
-    width: 450px;
+    width: 500px;
     height: 38px;
     bottom: 45px;
-  }
+}
 
-  #searchBar input {
-    width: inherit;
-    height: inherit;
+#searchBar input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    float: left;
+    width: 85%;
+    background: white;
     outline: none;
-  }
+}
 
+#searchBar button {
+    float: right;
+    width: 15%;
+    padding: 6px 10px 6px 10px;
+    background: darkorchid;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
 
+  #searchBar i {
+    color: white;
+    font-size: 27px;
+}
+
+  #searchBar button:hover {
+    background: darkmagenta;
+}
+
+  #searchBar button:active {
+    background: darkorchid;
+}
+
+#searchBar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+  /* Create ad button ˇˇˇˇˇˇ */
+
+#createAd {
+  position: absolute;
+  right: 220px;
+  bottom: 48px;
+  width: 140px;
+  height: 42px;
+  background: darkorchid;
+  border: 1px solid black;
+}
+
+#createAd a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#createAd:hover {
+  background: darkmagenta;
+}
+
+#createAd:active {
+  background: darkorchid;
+}
+
+/* Detail Search ˘˘˘˘˘˘ */
+
+#detailSearch {
+  position: relative;
+  left: 520px;
+  font-size: 17px;
+  bottom: 35px;
+  color: darkmagenta;
+}
+
+#detailSearch:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Menu and navigation ˘˘˘˘˘˘ */
+
+#menu {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 230px;
+  height: 350px;
+  background: black;
+}
+
+#navigation {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 1px solid black;
+}
+
+.navigationSegment {
+  position: relative;
+  font-size: 20px;
+  height: 50px;
+  font-family: "Britannic-Bold";
+  line-height: 2.2;
+  width: inherit;
+  border: 1px solid black;
+}

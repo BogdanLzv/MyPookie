@@ -3,13 +3,33 @@
     <head>
         <title>MyPookie</title>
         <link rel="stylesheet" href="CSS/main page style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <header>
             <img src="CSS/images/LOGO 1.png" id="logo">
-            <div id="searchBar">
+            <form id="searchBar">
                 <input type="text" placeholder="Search ads..">
-            </div>
+                <button type="submit"><i class='bx bx-search'></i></button>
+            </form>
+            <button id="createAd">
+                <a href="#">+ Create ad</a>
+            </button>
+            <p id="detailSearch">Detail search<i class='bx bx-chevron-down' ></i></p>
         </header>
+
+        <!-- Menu and navigation ˘˘˘˘˘˘ -->
+
+        <div id="menu">
+            <ul id="navigation">
+                <li class="navigationSegment">My profile</li>
+                <li class="navigationSegment">Inbox</li>
+                <li class="navigationSegment">Notifications</li>
+                <li class="navigationSegment">My reviews</li>
+                <li class="navigationSegment">Saved ads</li>
+                <li class="navigationSegment">Settings</li>
+                <li class="navigationSegment">Log out</li>
+            </ul>
+        </div>
     </body>
 </html>
