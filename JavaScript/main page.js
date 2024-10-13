@@ -29,7 +29,7 @@ const savedAdsText = document.getElementById("savedAdsText");
 const settingsTableRow = document.getElementById("settingsTableRow");
 const settingsText = document.getElementById("settingsText");
 
-// Capturing elements in a sixth table row ˘˘˘˘˘˘
+// Capturing elements in a final table row ˘˘˘˘˘˘
 
 const logOutTableRow = document.getElementById("logOutTableRow");
 const logOutText = document.getElementById("logOutText");
@@ -70,10 +70,55 @@ tableRowMouseOut(reviewsTableRow, reviewsText);
 tableRowHover(savedAdsTableRow, savedAdsText);
 tableRowMouseOut(savedAdsTableRow, savedAdsText);
 
-// Fifth row ˘˘˘˘˘˘
+// Sixth row ˘˘˘˘˘˘
 tableRowHover(settingsTableRow, settingsText);
 tableRowMouseOut(settingsTableRow, settingsText);
 
 // Final row ˘˘˘˘˘˘
 tableRowHover(logOutTableRow, logOutText);
 tableRowMouseOut(logOutTableRow, logOutText);
+
+
+// Functions for changing table rows when they are being clicked ("click functions")˘˘˘˘˘˘
+
+const tableRowClick = (eventTarget, changedTarget) => {
+    eventTarget.addEventListener("mousedown", () => {
+        changedTarget.style.fontSize = "22px"
+    });
+};
+
+const tableRowMouseUp = (eventTarget, changedTarget) => {
+    eventTarget.addEventListener("mouseup", () => {
+        changedTarget.style.fontSize = "25px"
+    });
+};
+
+// Executing "click functions" on all rows ˘˘˘˘˘˘
+
+// First row ˘˘˘˘˘˘
+tableRowClick(profileTableRow, myProfileText);
+tableRowMouseUp(profileTableRow, myProfileText);
+
+// Second row ˘˘˘˘˘˘
+tableRowClick(inboxTableRow, inboxText);
+tableRowMouseUp(inboxTableRow, inboxText);
+
+// Third row ˘˘˘˘˘˘
+tableRowClick(notificationsTableRow, notificationsText);
+tableRowMouseUp(notificationsTableRow, notificationsText);
+
+// Fourth row ˘˘˘˘˘˘
+tableRowClick(reviewsTableRow, reviewsText);
+tableRowMouseUp(reviewsTableRow, reviewsText);
+
+// Fifth row ˘˘˘˘˘˘
+tableRowClick(savedAdsTableRow, savedAdsText);
+tableRowMouseUp(savedAdsTableRow, savedAdsText);
+
+// sixth row ˘˘˘˘˘˘
+tableRowClick(settingsTableRow, settingsText);
+tableRowMouseUp(settingsTableRow, settingsText);
+
+// Final row ˘˘˘˘˘˘
+tableRowClick(logOutTableRow, logOutText);
+tableRowMouseUp(logOutTableRow, logOutText);
