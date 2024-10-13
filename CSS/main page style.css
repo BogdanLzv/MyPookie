@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Britannic-Bold;
-    src: url("Fonts/Britannic Bold Regular.ttf");
-}
-
 body {
     background: floralwhite;
     height: 100%;
@@ -128,14 +123,14 @@ header {
   top: 60px;
   left: 50px;
   width: 230px;
-  height: 350px;
+  height: 430px;
   background: transparent;
 }
 
 #menu table {
   table-layout: fixed;
   width: inherit;
-  height: inherit;
+  height: 350px;
   background: transparent;
 }
 
@@ -146,27 +141,35 @@ header {
 }
 
 #menu th {
-  border: 2px solid darkmagenta;
-  font-size: 25px;
-  font-family: "Lato Bold";
+  border: 3px solid darkmagenta;
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: darkmagenta;
 }
 
 #menu img {
   height: 44px;
   float: left;
-  margin: 3px;
+  margin: 3px 18px 3px 3px;
 }
 
 #menu i {
-  font-size: 44px;
-  margin: 3px;
+  margin-right: 24px;
+  margin-left: 7px;
+  font-size: 35px;
   float: left;
   color: black;
+  line-height: 49px;
 }
 
 #menu p {
-  margin-left: 10px;
   float: left;
   line-height: 50px;
+  width: inherit;
+}
+#menu h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 500;
 }
