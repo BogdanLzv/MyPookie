@@ -201,10 +201,10 @@ header {
 #container {
   position: relative;
   display: grid;
-  top: 200px;
-  left: 450px;
+  top: 205px;
+  left: 440px;
   grid-template-rows: 150px 150px 150px 150px;
-  grid-template-columns: 45px 150px 800px;
+  grid-template-columns: 50px 150px 800px;
 }
 
 #item1 {
@@ -213,6 +213,7 @@ header {
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
+  margin: 1.5px;
 }
 
 #item2 {
@@ -221,6 +222,7 @@ header {
   grid-row-end: 2;
   grid-column-start: 3;
   grid-column-end: 4;
+  margin: 1.5px;
 }
 
 #item3 {
@@ -229,6 +231,7 @@ header {
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+  margin: 1.5px;
 }
 
 #item4 {
@@ -237,6 +240,7 @@ header {
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
+  margin: 1.5px;
 }
 
 #item5 {
@@ -245,6 +249,7 @@ header {
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
+  margin: 1.5px;
 }
 
 #item6 {
@@ -253,6 +258,7 @@ header {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
+  margin: 1.5px;
 }
 
 #item7 {
@@ -261,6 +267,7 @@ header {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
+  margin: 1.5px;
 }
 
 #item8 {
@@ -269,6 +276,7 @@ header {
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
+  margin: 1.5px;
 }
 
 #item9 {
@@ -277,6 +285,7 @@ header {
   grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: 4;
+  margin: 1.5px;
 }
 
 #item10 {
@@ -285,6 +294,7 @@ header {
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 2;
+  margin: 1.5px;
 }
 
 #item11 {
@@ -293,6 +303,7 @@ header {
   grid-row-end: 5;
   grid-column-start: 2;
   grid-column-end: 3;
+  margin: 1.5px;
 }
 
 #item12 {
@@ -301,4 +312,5 @@ header {
   grid-row-end: 5;
   grid-column-start: 3;
   grid-column-end: 4;
+  margin: 1.5px;
 }
