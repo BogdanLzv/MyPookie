@@ -7,6 +7,7 @@
 body {
     background: floralwhite;
     height: 100%;
+    overflow-x: hidden;
 }
 
 #logo {
@@ -22,6 +23,7 @@ header {
     border-bottom: 2px solid darkmagenta;
     position: fixed;
     top: 0;
+    z-index: 15;
 }
 
   /* SearchBar form ˇˇˇˇˇˇ */
@@ -119,6 +121,7 @@ header {
 /* Menu and navigation ˘˘˘˘˘˘ */
 
 #menu {
+  z-index: 15;
   position: fixed;
   top: 165px;
   left: 50px;
@@ -196,7 +199,7 @@ header {
 /* Ad section ˘˘˘˘˘˘ */
 
 #container {
-  position: fixed;
+  position: relative;
   display: grid;
   top: 200px;
   left: 450px;
