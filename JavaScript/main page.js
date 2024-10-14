@@ -38,7 +38,7 @@ const logOutText = document.getElementById("logOutText");
 
 const tableRowHover = (eventTarget, changedTarget) => {
     eventTarget.addEventListener("mouseover", () => {
-        changedTarget.style.fontSize = "25px"
+        changedTarget.style.fontSize = "24px"
     });
 };
 
@@ -89,7 +89,7 @@ const tableRowClick = (eventTarget, changedTarget) => {
 
 const tableRowMouseUp = (eventTarget, changedTarget) => {
     eventTarget.addEventListener("mouseup", () => {
-        changedTarget.style.fontSize = "25px"
+        changedTarget.style.fontSize = "24px"
     });
 };
 
