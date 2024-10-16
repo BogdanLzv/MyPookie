@@ -38,13 +38,15 @@ const logOutText = document.getElementById("logOutText");
 
 const tableRowHover = (eventTarget, changedTarget) => {
     eventTarget.addEventListener("mouseover", () => {
-        changedTarget.style.fontSize = "24px"
+        changedTarget.style.fontSize = "24px";
+        changedTarget.style.color = "black";
     });
 };
 
 const tableRowMouseOut = (eventTarget, changedTarget) => {
     eventTarget.addEventListener("mouseleave", () => {
         changedTarget.style.fontSize = "23px"
+        changedTarget.style.color = "darkmagenta";
     });
 };
 
