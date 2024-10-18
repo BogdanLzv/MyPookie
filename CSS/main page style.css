@@ -361,7 +361,7 @@ header {
   position: relative;
 }
 
-#animalKind-select span {
+#animalKind-text {
   font-size: 20px;
   color: darkmagenta;
   font-weight: 500;
@@ -420,3 +420,5 @@ header {
   align-items: center;
   transition: 1s;
 }
+
+/* Price range form ˘˘˘˘˘˘ */
