@@ -332,16 +332,11 @@ header {
   align-items: center;
 }
 
-#searchContainer {
-  width: inherit;
-  height: 120px;
-  position: relative;
-}
-
 #detailSearchForm {
   background: white;
   width: inherit;
-  height: inherit;
+  height: 120px;
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
