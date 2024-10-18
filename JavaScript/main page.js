@@ -40,6 +40,7 @@ const tableRowHover = (eventTarget, changedTarget) => {
     eventTarget.addEventListener("mouseover", () => {
         changedTarget.style.fontSize = "24px";
         changedTarget.style.color = "black";
+        changedTarget.style.transition = "0.3s"
     });
 };
 
@@ -86,6 +87,7 @@ tableRowMouseOut(logOutTableRow, logOutText);
 const tableRowClick = (eventTarget, changedTarget) => {
     eventTarget.addEventListener("mousedown", () => {
         changedTarget.style.fontSize = "22px"
+        changedTarget.style.transition = "0s"
     });
 };
 
