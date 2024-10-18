@@ -1,4 +1,6 @@
 
+// MOUSE TRANSITIONS FOR THE NAV OF THE SITE OR "THE MENU" ˘˘˘˘˘˘˘˘
+
 // Capturing elements in a first table row ˘˘˘˘˘˘
 
 const profileTableRow = document.getElementById("firstTableRow");
@@ -126,3 +128,35 @@ tableRowMouseUp(settingsTableRow, settingsText);
 // Final row ˘˘˘˘˘˘
 tableRowClick(logOutTableRow, logOutText);
 tableRowMouseUp(logOutTableRow, logOutText);
+
+
+// TRANSITIONS FOR A "DETAIL SEARCH" SECTION ˘˘˘˘˘˘˘˘
+
+// Capturing elements in detail search section ˘˘˘˘˘˘
+
+const animalKind = document.getElementById("animalKind-select");
+const animalKindList = document.getElementById("animalKind-list");
+const animalKindArrow = document.getElementById("animalKindArrow");
+
+// Functions for changing detail lists display ˘˘˘˘˘˘
+
+const detailListDisplay = (eventTarget, changedTarget_1, changedTarget_2) => {
+    eventTarget.addEventListener("click", () => {
+        const targetDisplay = window.getComputedStyle(changedTarget_1).display;
+        const targetTransform = window.getComputedStyle(changedTarget_2).transform;
+        if (targetDisplay === "none" && targetTransform === "none") {
+            changedTarget_1.style.display = "flex";
+            changedTarget_2.style.transform = "rotate(180deg)";
+        } else {
+            changedTarget_1.style.display = "none";
+            changedTarget_2.style.transform = "none";
+        };
+    });
+};
+
+
+// Executing detail lists display function on all lists ˘˘˘˘˘˘
+
+// Animal kind ˘˘˘˘˘˘
+
+detailListDisplay(animalKind, animalKindList, animalKindArrow);
