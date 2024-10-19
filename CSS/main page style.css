@@ -208,8 +208,17 @@ header {
   grid-template-columns: 50px 150px 800px;
 }
 
+/* Ads positioning ˇˇˇˇˇˇ */
+
 #item1 {
-  background: red;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+#item2 {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
@@ -217,7 +226,7 @@ header {
   margin: 1.5px;
 }
 
-#item2 {
+#item3 {
   background: blue;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -226,8 +235,15 @@ header {
   margin: 1.5px;
 }
 
-#item3 {
-  background: green;
+#item4 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+#item5 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -235,7 +251,7 @@ header {
   margin: 1.5px;
 }
 
-#item4 {
+#item6 {
   background: yellow;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -244,26 +260,7 @@ header {
   margin: 1.5px;
 }
 
-#item5 {
-  background: violet;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-#item6 {
-  background: brown;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
 #item7 {
-  background: red;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
@@ -272,7 +269,6 @@ header {
 }
 
 #item8 {
-  background: blue;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
@@ -290,7 +286,6 @@ header {
 }
 
 #item10 {
-  background: yellow;
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 1;
@@ -299,7 +294,6 @@ header {
 }
 
 #item11 {
-  background: violet;
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 2;
@@ -316,6 +310,48 @@ header {
   margin: 1.5px;
 }
 
+/* Likes and dislikes next to the pictures ˘˘˘˘˘˘ */
+
+.reviewsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.likes {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  color: darkgreen;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+.dislikes {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  color: darkred;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+/* Ad pictures ˘˘˘˘˘˘ */
+
+.adPicture {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Names ˘˘˘˘˘˘ */
+
+.name {
+  
+}
 
 /* Detail search section ˘˘˘˘˘˘ */
 
@@ -328,7 +364,7 @@ header {
   position: fixed;
   border-right: none;
   top: 130px;
-  display: flex;
+  display: none;
   align-items: center;
 }
 

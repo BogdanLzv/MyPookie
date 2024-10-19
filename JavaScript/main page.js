@@ -139,7 +139,7 @@ const animalKindList = document.getElementById("animalKind-list");
 const animalKindArrow = document.getElementById("animalKindArrow");
 const animalKindText = document.getElementById("animalKind-text");
 
-// Functions for changing detail lists display ˘˘˘˘˘˘
+// Functions for changing detail lists ˘˘˘˘˘˘
 
 const detailListDisplay = (eventTarget, changedTarget_1, changedTarget_2, changedTarget_3) => {
     eventTarget.addEventListener("click", () => {
@@ -147,7 +147,7 @@ const detailListDisplay = (eventTarget, changedTarget_1, changedTarget_2, change
         const targetTransform = window.getComputedStyle(changedTarget_2).transform;
         const targetColor = window.getComputedStyle(changedTarget_3).color;
 
-        // Handle mismatch in color value
+        // Fix mismatch in a color value
         const isColorDarkMagenta = (targetColor === "rgb(139, 0, 139)"); // darkmagenta in RGB
 
         if (targetDisplay === "none" && targetTransform === "none" && isColorDarkMagenta) {
