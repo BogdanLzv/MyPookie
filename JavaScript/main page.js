@@ -173,3 +173,14 @@ detailListDisplay(animalKind, animalKindList, animalKindArrow, animalKindText);
 // ANIMATION FOR AD SECTION ˘˘˘˘˘˘˘˘
 
 // Capturing elements in ad section ˘˘˘˘˘˘
+
+const reviewsContainer = document.getElementsByClassName("reviewsSection");
+
+const allItems = document.querySelectorAll('#container > div');
+const rowItems = Array.from(allItems).filter(item => 
+  getComputedStyle(item).gridRowStart === '1'
+);
+
+// Executing animation on ads ˘˘˘˘˘˘
+
+
