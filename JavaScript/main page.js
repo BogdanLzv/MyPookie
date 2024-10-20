@@ -147,7 +147,7 @@ const detailListDisplay = (eventTarget, changedTarget_1, changedTarget_2, change
         const targetTransform = window.getComputedStyle(changedTarget_2).transform;
         const targetColor = window.getComputedStyle(changedTarget_3).color;
 
-        // Fix mismatch in a color value
+        // Fix mismatch in a color value ˘˘˘˘˘˘
         const isColorDarkMagenta = (targetColor === "rgb(139, 0, 139)"); // darkmagenta in RGB
 
         if (targetDisplay === "none" && targetTransform === "none" && isColorDarkMagenta) {
@@ -168,3 +168,8 @@ const detailListDisplay = (eventTarget, changedTarget_1, changedTarget_2, change
 // Animal kind ˘˘˘˘˘˘
 
 detailListDisplay(animalKind, animalKindList, animalKindArrow, animalKindText);
+
+
+// ANIMATION FOR AD SECTION ˘˘˘˘˘˘˘˘
+
+// Capturing elements in ad section ˘˘˘˘˘˘
