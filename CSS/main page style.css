@@ -22,7 +22,7 @@ body {
 header {
     background: white;
     width: 100%;
-    height: 130px;
+    height: 140px;
     border-bottom: 2px solid darkmagenta;
     position: fixed;
     top: 0;
@@ -45,6 +45,7 @@ header {
     border: 1px solid black;
     float: left;
     width: 85%;
+    height: 42px;
     background: white;
     outline: none;
 }
@@ -83,7 +84,7 @@ header {
 #createAd {
   position: absolute;
   right: 220px;
-  bottom: 48px;
+  bottom: 58px;
   width: 140px;
   height: 42px;
   background: darkorchid;
@@ -108,9 +109,9 @@ header {
 /* Detail Search ˘˘˘˘˘˘ */
 
 #detailSearch {
-  width: 110px;
+  width: 120px;
   position: relative;
-  left: 520px;
+  left: 510px;
   font-size: 17px;
   bottom: 35px;
   color: darkmagenta;
@@ -125,7 +126,6 @@ header {
 
 #menu {
   position: fixed;
-  top: 165px;
   left: 50px;
   width: 240px;
   height: 430px;
@@ -200,12 +200,13 @@ header {
   width: fit-content;
   position: relative;
   display: grid;
-  top: 205px;
-  left: 440px;
+  left: 410px;
   grid-template-rows: 150px 150px 150px 150px;
   grid-template-columns: 50px 150px 800px;
   background: white;
-  padding: 15px;
+  padding: 10px 15px 1.5px 0;
+  margin-top: 180px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
 }
 
 /* Ads positioning ˇˇˇˇˇˇ */
@@ -227,7 +228,6 @@ header {
 }
 
 #item3 {
-  background: blue;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 3;
@@ -252,7 +252,6 @@ header {
 }
 
 #item6 {
-  background: yellow;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 3;
@@ -277,7 +276,6 @@ header {
 }
 
 #item9 {
-  background: green;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 3;
@@ -302,7 +300,6 @@ header {
 }
 
 #item12 {
-  background: brown;
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 3;
@@ -316,6 +313,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 5px 0;
 }
 
 .likes {
@@ -345,7 +343,13 @@ header {
   max-height: 100%;
 }
 
-/* Ads information section ˘˘˘˘˘˘ */
+/* Ads Information section ˘˘˘˘˘˘ */
+
+.informationSection {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .adInformationContainer {
   max-width: 150px;
@@ -357,8 +361,6 @@ header {
   font-size: 20px;
   font-weight: 600;
 }
-
-/* ad Information ˘˘˘˘˘˘ */
 
 .adInformation {
   display: flex;
@@ -381,6 +383,20 @@ header {
   color: black;
   font-weight: 500;
   padding: 2px;
+}
+
+/* Ad comment */
+
+.adComment {
+  padding: 10px 15px 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  width: 650px;
+  height: 135px;
+  background: white;
+  border: gray 1px solid;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* Detail search section ˘˘˘˘˘˘ */
