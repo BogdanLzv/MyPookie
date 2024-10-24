@@ -134,10 +134,29 @@ tableRowMouseUp(logOutTableRow, logOutText);
 
 // Capturing elements in detail search section ˘˘˘˘˘˘
 
+const detailSearch = document.getElementById("detailSearch");
+const detailSearchSection = document.getElementById("detailSearchSection");
+const dsArrow = document.getElementById("dsArrow")
 const animalKind = document.getElementById("animalKind-select");
 const animalKindList = document.getElementById("animalKind-list");
 const animalKindArrow = document.getElementById("animalKindArrow");
 const animalKindText = document.getElementById("animalKind-text");
+const bodyCover = document.getElementById("bodyCover")
+
+// Function for opening detail search section ˘˘˘˘˘˘
+
+detailSearch.onclick = function() {
+    if (detailSearchSection.style.display === "none") {
+        detailSearchSection.style.display = "flex";
+        dsArrow.style.transform = "rotate(180deg)";
+        bodyCover.style.display = "block";
+    } else {
+        detailSearchSection.style.display = "none";
+        dsArrow.style.transform = "none";
+        bodyCover.style.display = "none";
+    };
+};
+
 
 // Functions for changing detail lists ˘˘˘˘˘˘
 
@@ -168,19 +187,3 @@ const detailListDisplay = (eventTarget, changedTarget_1, changedTarget_2, change
 // Animal kind ˘˘˘˘˘˘
 
 detailListDisplay(animalKind, animalKindList, animalKindArrow, animalKindText);
-
-
-// ANIMATION FOR AD SECTION ˘˘˘˘˘˘˘˘
-
-// Capturing elements in ad section ˘˘˘˘˘˘
-
-const reviewsContainer = document.getElementsByClassName("reviewsSection");
-
-const allItems = document.querySelectorAll('#container > div');
-const rowItems = Array.from(allItems).filter(item => 
-  getComputedStyle(item).gridRowStart === '1'
-);
-
-// Executing animation on ads ˘˘˘˘˘˘
-
-
