@@ -1,90 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-    background: floralwhite;
-    height: 100%;
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
+  background: floralwhite;
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 #logo {
-    position: relative;
-    height: 80px;
-    top: 20px;
+  width: 300px;
+  display: flex;
+  position: relative;
+  right: 100px;
 }
 
 header {
-    background: white;
-    width: 100%;
-    height: 140px;
-    border-bottom: 2px solid darkmagenta;
-    position: fixed;
-    top: 0;
-    z-index: 3;
+  background: white;
+  width: 100%;
+  height: 140px;
+  border-bottom: 2px solid darkmagenta;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
   /* SearchBar form ˇˇˇˇˇˇ */
 
+ #searchBarContainer {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  width: 475px;
+  position: relative;
+  right: 90px;
+}
+  
 #searchBar {
-    position: relative;
-    margin: 0 auto;
-    width: 500px;
-    height: 38px;
-    bottom: 45px;
+  width: 475px;
+  height: 42px;
 }
 
 #searchBar input {
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid black;
-    float: left;
-    width: 85%;
-    height: 42px;
-    background: white;
-    outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid black;
+  width: 400px;
+  height: 42px;
+  background: white;
+  outline: none;
+  float: left;
 }
 
-#searchBar button {
-    float: right;
-    width: 15%;
-    padding: 6px 10px 6px 10px;
-    background: darkorchid;
-    border: 1px solid black;
-    border-left: none;
-    cursor: pointer;
+#searchBarSubmit {
+  width: 75px;
+  height: 42px;
+  padding: 6px 10px 6px 10px;
+  background: darkorchid;
+  border: 1px solid black;
+  border-left: none;
+  cursor: pointer;
+  float: right;
 }
 
   #searchBar i {
-    color: white;
-    font-size: 27px;
+  color: white;
+  font-size: 27px;
 }
 
   #searchBar button:hover {
-    background: darkmagenta;
+  background: darkmagenta;
 }
 
   #searchBar button:active {
-    background: darkorchid;
+  background: darkorchid;
 }
 
 #searchBar::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Detail Search ˘˘˘˘˘˘ */
+
+#detailSearch {
+  width: 120px;
+  font-size: 17px;
+  color: darkmagenta;
+  position: absolute;
+  top: 95px;
+}
+
+#detailSearch:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
   /* Create ad button ˇˇˇˇˇˇ */
 
 #createAd {
-  position: absolute;
-  right: 220px;
-  bottom: 58px;
+  position: relative;
+  right: 90px;
   width: 140px;
   height: 42px;
   background: darkorchid;
@@ -104,22 +129,6 @@ header {
 
 #createAd:active {
   background: darkorchid;
-}
-
-/* Detail Search ˘˘˘˘˘˘ */
-
-#detailSearch {
-  width: 120px;
-  position: relative;
-  left: 510px;
-  font-size: 17px;
-  bottom: 35px;
-  color: darkmagenta;
-}
-
-#detailSearch:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 /* Menu and navigation ˘˘˘˘˘˘ */
