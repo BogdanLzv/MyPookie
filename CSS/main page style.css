@@ -9,10 +9,9 @@
 
 body {
   background: floralwhite;
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
 }
 
 #logo {
@@ -27,7 +26,7 @@ header {
   height: 140px;
   border-bottom: 2px solid darkmagenta;
   position: fixed;
-  top: 0;
+  top: 0px;
   z-index: 3;
   display: flex;
   justify-content: space-around;
@@ -419,7 +418,7 @@ header {
 
 #detailSearchSection {
   background: white;
-  width: inherit;
+  width: 100vw;
   height: 200px;
   border-bottom: 2px solid darkmagenta;
   z-index: 3;
@@ -638,6 +637,13 @@ header {
 
 /* CREATE AD PAGE ˘˘˘˘˘˘˘˘˘˘ */
 
+#createAdBody {  /* style for "Create Ad" body */
+  background: floralwhite;
+  height: 100vw;
+  width: 100vw;
+  position: fixed;
+}
+
 #createAdLogo {
   position: absolute;
   left: 1px;
@@ -649,8 +655,8 @@ header h1 {
 }
 
 #createAdContainer {
-  height: fit-content;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position: relative;
   top: 140px;
   display: flex;
@@ -660,14 +666,155 @@ header h1 {
 
 /* Detail information section ˘˘˘˘˘˘ */
 
-#detailInformation {
+#detailInformationContainer {
   height: 50px;
-  width: inherit;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
 }
 
-#name {
-
+.detailInformationInput::placeholder {
+  opacity: 1;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
+.detailInformationInput::-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.detailInformationInput {
+  padding-left: 8px;
+  width: 210px;
+  height: 50px;
+  border: solid 2px darkmagenta;
+  border-radius: 4px;
+  outline: none;
+  color: black;
+  font-size: 20px;
+}
+
+/* Duration input ˘˘˘˘˘˘ */
+
+#duration {
+  padding-right: 55px;
+}
+
+#durationText {
+  position: absolute;
+  right: 675px;
+  top: 38px;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Price Input ˘˘˘˘˘˘ */
+
+#price {
+  padding-right: 35px;
+}
+
+#priceDollarSign {
+  position: absolute;
+  right: 365px;
+  top: 39px;
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* Insert Picture Input */
+
+#insertPictureContainer {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#insertPicture {
+  background: white;
+  height: 160px;
+  width: 160px;
+  border: solid 2px darkmagenta;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#insertPicture p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+}
+
+/* Description Input */
+
+#descriptionContainer {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+#descriptionContainer textarea {
+  background: white;
+  height: 160px;
+  width: 470px;
+  border: solid 2px darkmagenta;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  resize: none;
+  color: black;
+  padding: 4px;
+}
+
+#descriptionContainer textarea::placeholder {
+  font-size: 20px;
+  text-align: center;
+  line-height: 7;
+  font-weight: 500;
+}
+
+#descriptionContainer textarea::-ms-input-placeholder {
+  font-size: 20px;
+  text-align: center;
+  line-height: 7;
+  font-weight: 500;
+}
+
+/* Continue Button */
+
+#continueButton {
+  position: absolute;
+  right: 230px;
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
+  background: darkorchid;
+  font-size: 19px;
+  border: none;
+}
+
+#continueButton a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#continueButton:hover {
+  cursor: pointer;
+  background: darkmagenta;
+}
+
+#continueButton:active {
+  background: darkorchid;
+}

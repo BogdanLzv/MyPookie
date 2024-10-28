@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>MyPookie</title>
         <link rel="stylesheet" href="CSS/main page style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
-    <body>
+
+    <body id="createAdBody">
         <header>
             <img src="CSS/images/LOGO 1.png" id="createAdLogo">
             <h1>Create Ad</h1>
         </header>
         <div id="createAdContainer">
-            <div id="detailInformation">
-                <input type="text" placeholder="Name" id="name">
+
+            <div id="detailInformationContainer">
+
+                <input type="text" placeholder="Name" id="name" class="detailInformationInput">
+
                 <div>
-                    <div id="animalKind-select">
+                    <div id="animalKind-select" class="detailInformationInput">
                         <span id="animalKind-text">Animal kind</span>
                         <i class='bx bx-chevron-down' id="animalKindArrow"></i>
                     </div>
@@ -33,17 +38,37 @@
                         </li>
                     </ul>
                 </div>
-                <input type="text" placeholder="Number of days" id="name">
-                <input type="text" placeholder="Price" id="name">
-                <input type="text" placeholder="Place" id="name">
+
+                <div>
+                    <input type="text" placeholder="Duration" id="duration" class="detailInformationInput">
+                    <span id="durationText">days</span>
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Price" id="price" class="detailInformationInput">
+                    <i class='bx bx-dollar' id="priceDollarSign"></i>
+                </div>
+
+                <input type="text" placeholder="Place" class="detailInformationInput">
             </div>
-        </div>
-        <div id="pictureContainer">
+
+            <div id="insertPictureContainer">
+                <div id="insertPicture">
+                    <p>Insert pictures<br>HERE</p>
+                </div>
+            </div>
+    
+            <div id="descriptionContainer">
+                <textarea  placeholder="Description"></textarea>
+                <button id="continueButton">
+                    <a href="#">Continue</a>
+                </button>
+            </div>
 
         </div>
-        <div id="descriptionContainer">
 
-        </div>
+
+
     	<script src="JavaScript/main page.js"></script>
     </body>
 </html>
