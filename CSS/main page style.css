@@ -203,7 +203,7 @@ header {
   font-weight: 500;
 }
 
-/* Ad section ˘˘˘˘˘˘ */
+/* AD SECTION ˘˘˘˘˘˘ */
 
 #container {
   width: fit-content;
@@ -817,4 +817,57 @@ header h1 {
 
 #continueButton:active {
   background: darkorchid;
+}
+
+
+/* AD PAGE ˘˘˘˘˘˘˘˘˘˘ */
+
+#adContainer {
+  position: relative;
+  margin-top: 180px;
+  left: 600px;
+  display: grid;
+  grid-template-rows: 250px 80px 190px;
+  grid-template-columns: 250px 400px;
+}
+
+#item1 {
+  background: red;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+#item2 {
+  background: blue;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 1.5px;
+}
+
+#item3 {
+  background: black;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+#item4 {
+  background: purple;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 1.5px;
+}
+
+#adImage {
+  max-height: 100%;
+  max-width: 100%;
 }
