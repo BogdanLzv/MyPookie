@@ -827,12 +827,13 @@ header h1 {
   margin-top: 180px;
   left: 600px;
   display: grid;
-  grid-template-rows: 250px 80px 190px;
+  grid-template-rows: 250px 60px 190px;
   grid-template-columns: 250px 400px;
+  grid-auto-columns: 0px;
+  width: fit-content;
 }
 
 #item1 {
-  background: red;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
@@ -850,24 +851,34 @@ header h1 {
 }
 
 #item3 {
-  background: black;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
   margin: 1.5px;
+  display: flex;
+  justify-content: space-around;
 }
 
 #item4 {
-  background: purple;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 3;
   margin: 1.5px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: min-content;
 }
 
 #adImage {
+  max-height: 100%;
+  max-width: 100%;
+  display: absolute;
+}
+
+.miniProfilePicture {
   max-height: 100%;
   max-width: 100%;
 }
