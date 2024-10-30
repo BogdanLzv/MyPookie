@@ -831,7 +831,9 @@ header h1 {
   grid-template-columns: 250px 400px;
   grid-auto-columns: 0px;
   width: fit-content;
-  box-shadow: darkmagenta 0px 0px 3px;
+  border: 2px solid darkmagenta;
+  background: white;
+  padding: 20px;
 }
 
 #item1 {
@@ -840,10 +842,12 @@ header h1 {
   grid-column-start: 1;
   grid-column-end: 2;
   margin: 1.5px;
+  display: flex;
+  align-items: center;
 }
 
 #item2 {
-  background: blue;
+  background: white;
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -888,16 +892,73 @@ header h1 {
   max-height: 100%;
 }
 
+#arrowContainer {
+  position: absolute;
+  height: 30px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#arrowContainer i {
+  font-size: 20px;
+  border-radius: 50px;
+  background: darkmagenta;
+  color: white;
+  padding: 4px;
+}
+
+#leftArrow {
+  margin-left: 5px;
+}
+
+#rightArrow {
+  margin-right: 5px;
+}
+
+#arrowContainer i:hover {
+  font-size: 23px;
+  transition: 0.2s;
+}
+
 /* Ad Detail Information */
 
 .adDetailInformation {
   width: inherit;
-  height: 45px;
+  height: 47px;
+  padding-left: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: floralwhite;
+  border: 1px solid darkmagenta;
+  margin: 0 4px;
+}
+
+.adDetailInformation span {
+  color: darkmagenta;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
   align-items: center;
 }
 
-.likesAndDislikes {
+.adDetailInformation span i {
+  color: black;
+  font-size: 35px;
+}
 
+#like i {
+  margin-right: 5px;
+  color: darkgreen;
+}
+
+#dislike i {
+  margin: 0 5px 0 20px;
+  color: darkred;
+}
+
+#sendMessageContainer i, #adLocationContainer i, #adTimePeriodContainer i, #adPriceContainer i, #adBookmarkContainer i {
+  margin-right: 15px;
 }
