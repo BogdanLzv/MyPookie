@@ -205,7 +205,7 @@ header {
 
 /* AD SECTION ˘˘˘˘˘˘ */
 
-#container {
+#Adscontainer {
   width: fit-content;
   position: relative;
   display: grid;
@@ -831,6 +831,7 @@ header h1 {
   grid-template-columns: 250px 400px;
   grid-auto-columns: 0px;
   width: fit-content;
+  box-shadow: darkmagenta 0px 0px 3px;
 }
 
 #item1 {
@@ -848,6 +849,9 @@ header h1 {
   grid-column-start: 2;
   grid-column-end: 3;
   margin: 1.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #item3 {
@@ -865,12 +869,14 @@ header h1 {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 3;
-  margin: 1.5px;
+  margin: 3px;
   padding: 4px;
   border-radius: 4px;
   border: 1px solid black;
   height: min-content;
 }
+
+/* Ad Images ˘˘˘˘˘˘ */
 
 #adImage {
   max-height: 100%;
@@ -880,5 +886,18 @@ header h1 {
 
 .miniProfilePicture {
   max-height: 100%;
-  max-width: 100%;
+}
+
+/* Ad Detail Information */
+
+.adDetailInformation {
+  width: inherit;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.likesAndDislikes {
+
 }
