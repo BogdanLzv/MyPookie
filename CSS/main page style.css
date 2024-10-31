@@ -5,7 +5,9 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* LOGIN PAGE ˘˘˘˘˘˘˘˘˘˘ */
+
+
+/* LOGIN PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 #loginBody {
   background-image: url("Images/Cat and Dog.jpg");
@@ -151,7 +153,8 @@ aside h2 {
 }
 
 
-/* MAIN PAGE WITH ADS ˘˘˘˘˘˘˘˘˘˘ */
+
+/* MAIN PAGE WITH ADS ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 body {
   background: floralwhite;
@@ -781,7 +784,7 @@ body {
 
 
 
-/* CREATE AD PAGE ˘˘˘˘˘˘˘˘˘˘ */
+/* CREATE AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 #createAdBody {  /* style for "Create Ad" body */
   background: floralwhite;
@@ -967,7 +970,7 @@ header h1 {
 
 
 
-/* AD PAGE ˘˘˘˘˘˘˘˘˘˘ */
+/* AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 #adContainer {
   position: relative;
