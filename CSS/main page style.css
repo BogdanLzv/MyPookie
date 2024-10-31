@@ -5,6 +5,152 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* LOGIN PAGE ˘˘˘˘˘˘˘˘˘˘ */
+
+#loginBody {
+  background-image: url("Images/Cat and Dog.jpg");
+  background-size: cover;
+  background-position: center;
+  display: inline;
+}
+
+#loginLogo {
+  height: 80px;
+  position: absolute;
+  top: 10px;
+}
+
+#loginHeader {
+  width: inherit;
+  display: inline;
+}
+
+#loginHeader h1 {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 0 10px  black;
+}
+
+/* Complementary text ˘˘˘˘˘˘ */
+
+aside h2 {
+  position: relative;
+  right: 330px;
+  top: 120px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 0 10px  black;
+}
+
+/* Login Form ˘˘˘˘˘˘˘ */
+
+#loginForm {
+  color: white;
+  height: 370px;
+  width: 340px;
+  background: transparent;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 0 10px black;
+  position: relative;
+  left: 870px;
+  bottom: 210px;
+  border-radius: 8px;
+  padding: 25px;
+  border: 2px solid white;
+}
+
+#loginForm h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.inputBox input {
+  padding: 0 32px 0 15px;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 40px;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.inputBox input::placeholder {
+  color: white;
+}
+
+.inputBox i {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  color: white;
+  font-size: 18px;
+}
+
+#rememberMe {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+#rememberMe input {
+  accent-color: white;
+}
+
+#rememberMe a {
+  color: white;
+  text-decoration: none;
+}
+
+#rememberMe a:hover {
+  text-decoration: underline;
+}
+
+#loginForm button {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 40px;
+  background: white;
+  cursor: pointer;
+  color: #2C3539;
+  font-weight: 600;
+  margin-top: 7px;
+}
+
+#registerLink {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#registerLink a {
+  color: white;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+#registerLink a:hover {
+  text-decoration: underline;
+}
+
+
 /* MAIN PAGE WITH ADS ˘˘˘˘˘˘˘˘˘˘ */
 
 body {
@@ -20,7 +166,7 @@ body {
   right: 100px;
 }
 
-header {
+#mainHeader {
   background: white;
   width: 100%;
   height: 140px;
@@ -203,7 +349,7 @@ header {
   font-weight: 500;
 }
 
-/* AD SECTION ˘˘˘˘˘˘ */
+/* Ad section ˘˘˘˘˘˘ */
 
 #Adscontainer {
   width: fit-content;
@@ -218,7 +364,7 @@ header {
   box-shadow: darkmagenta 0px 0px 3px;
 }
 
-/* ADS POSITION ˇˇˇˇˇˇ */
+/* Ads position ˇˇˇˇˇˇ */
 
 /* Reviews container position ˇˇˇˇˇˇ */
 
@@ -644,7 +790,7 @@ header {
   position: fixed;
 }
 
-#createAdLogo {
+#createAdBody #logo {
   position: absolute;
   left: 1px;
   width: 300px;
@@ -820,6 +966,7 @@ header h1 {
 }
 
 
+
 /* AD PAGE ˘˘˘˘˘˘˘˘˘˘ */
 
 #adContainer {
@@ -831,7 +978,7 @@ header h1 {
   grid-template-columns: 250px 400px;
   grid-auto-columns: 0px;
   width: fit-content;
-  border: 2px solid darkmagenta;
+  box-shadow: darkmagenta 0px 0px 3px;
   background: white;
   padding: 20px;
 }
