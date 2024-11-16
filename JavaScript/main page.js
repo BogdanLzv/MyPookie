@@ -3,7 +3,7 @@
 
 // Capturing elements in a first table row ˘˘˘˘˘˘
 
-const profileTableRow = document.getElementById("firstTableRow");
+const profileTableRow = document.getElementById("profileTableRow");
 const myProfileText = document.getElementById("myProfileText");
 
 // Capturing elements in a second table row ˘˘˘˘˘˘
