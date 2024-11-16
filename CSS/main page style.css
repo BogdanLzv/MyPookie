@@ -1112,3 +1112,96 @@ header h1 {
 #sendMessageContainer i, #adLocationContainer i, #adTimePeriodContainer i, #adPriceContainer i, #adBookmarkContainer i {
   margin-right: 15px;
 }
+
+
+
+/* MY PROFILE PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+
+/* Menu */
+
+#profileTableHeader {
+  background-color: lightblue;
+}
+
+/* My ads container */
+
+#myAdscontainer {
+  width: fit-content;
+  position: relative;
+  display: grid;
+  left: 410px;
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-columns: 150px 800px;
+  background: white;
+  padding: 10px 15px 1.5px 15px;
+  margin-top: 180px;
+  box-shadow: darkmagenta 0px 0px 3px;
+}
+
+/* My Ads Picture container position ˇˇˇˇˇˇ */
+
+#myAdPictureContainer1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+#myAdPictureContainer2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+#myAdPictureContainer3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+#myAdPictureContainer4 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 1.5px;
+}
+
+/* My Ads Information Container Position ˇˇˇˇˇˇ */
+
+#myAdInformationContainer1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 1.5px;
+}
+
+#myAdInformationContainer2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 1.5px;
+}
+
+#myAdInformationContainer3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 1.5px;
+}
+
+#myAdInformationContainer4 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 1.5px;
+}
