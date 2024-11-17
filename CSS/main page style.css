@@ -1205,3 +1205,46 @@ header h1 {
   grid-column-end: 3;
   margin: 1.5px;
 }
+
+
+
+/* MY AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+
+#makeChangesContainer{
+  width: inherit;
+  height: 47px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: floralwhite;
+  border: 1px solid darkmagenta;
+  margin: 0 4px;
+}
+
+#makeChangesContainer span {
+  color: darkmagenta;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+#makeChangesContainer span i {
+  color: black;
+  font-size: 35px;
+  padding-right: 5px;
+}
+
+#myAdName {
+  font-size: 35px;
+  color: black;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+#myAdNameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
