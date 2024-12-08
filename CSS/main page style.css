@@ -1250,3 +1250,11 @@ header h1 {
   justify-content: space-between;
 }
 
+
+/* CHAT PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+
+#chatLogo {
+  position: absolute;
+  left: 1px;
+  width: 300px;
+}
