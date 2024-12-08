@@ -1280,18 +1280,37 @@ header h1 {
   height: 60px;
   border: 3px solid darkmagenta;
   margin: 5px auto;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
 }
 
 .name {
+  display: flex;
+  align-items: center;
+}
 
+.name span {
+  color: black;
+  font-size: 25px;
 }
 
 .message {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
 
+.message span {
+  font-size: 19px;
+  color: dimgray;
+  font-weight: 500;
 }
 
 .date {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: dimgray;
 
 }
