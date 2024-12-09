@@ -1267,7 +1267,7 @@ header h1 {
   height: fit-content;
   width: 1000px;
   box-shadow: darkmagenta 0px 0px 3px;
-  padding: 30px 0;
+  padding: 20px 0;
   position: relative;
   margin-top: 180px;
   left: 420px;
@@ -1276,7 +1276,7 @@ header h1 {
 }
 
 .messageContainer {
-  width: 900px;
+  width: 950px;
   height: 60px;
   border: 2px solid darkmagenta;
   margin: 5px auto;
@@ -1288,11 +1288,9 @@ header h1 {
 .name {
   display: flex;
   align-items: center;
-}
-
-.name span {
   color: black;
   font-size: 25px;
+  font-weight: 500;
 }
 
 .message {
@@ -1312,5 +1310,52 @@ header h1 {
   align-items: center;
   font-size: 14px;
   color: dimgray;
+}
 
+
+/* CHAT WITH A USER PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+
+#inboxWithAUserContainer {
+  height: fit-content;
+  width: 1000px;
+  box-shadow: darkmagenta 0px 0px 3px;
+  padding: 0 0 30px 0;
+  position: relative;
+  margin-top: 180px;
+  left: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+#returnToInbox {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+#returnToInbox i, #returnToInbox span {
+  font-size: 20px;
+  color: darkmagenta;
+  font-weight: 500;
+}
+
+#rateUser {
+  width: 950px;
+  border: 2px solid darkmagenta;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.rate {
+  font-size: 22px;
+}
+
+.rate i {
+  margin-right: 5px;
 }
