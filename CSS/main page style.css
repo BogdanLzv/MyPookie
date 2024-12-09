@@ -1286,10 +1286,11 @@ header h1 {
 }
 
 .name {
+  width: 200px;
   display: flex;
   align-items: center;
   color: black;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -1297,17 +1298,21 @@ header h1 {
   display: flex;
   align-items: center;
   width: 400px;
+  position: relative;
+  margin-right: 50px;
 }
 
 .message span {
-  font-size: 19px;
+  font-size: 18px;
   color: dimgray;
   font-weight: 500;
 }
 
 .date {
+  width: 75px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   font-size: 14px;
   color: dimgray;
 }
@@ -1349,13 +1354,50 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .rate {
   font-size: 22px;
+  color: darkmagenta;
 }
 
 .rate i {
   margin-right: 5px;
+  color: darkmagenta;
+}
+
+#chatInfo {
+  width: 950px;
+  border: 2px solid darkmagenta;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin: 5px auto;
+  font-size: 20px;
+}
+
+#chatPictureAndName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 115px;
+}
+
+#chatInfo i {
+  margin-right: 5px;
+}
+
+#chatPicture {
+  height: 45px;
+}
+
+#chat {
+  width: 950px;
+  height: 500px;
+  border: 2px solid darkmagenta;
+  padding: 0 15px;
+  margin: 5px auto;
 }
