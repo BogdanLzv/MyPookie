@@ -1278,7 +1278,7 @@ header h1 {
 .messageContainer {
   width: 900px;
   height: 60px;
-  border: 3px solid darkmagenta;
+  border: 2px solid darkmagenta;
   margin: 5px auto;
   padding: 0 10px;
   display: flex;
