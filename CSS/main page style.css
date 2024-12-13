@@ -1417,7 +1417,8 @@ header h1 {
 
 .chatDateContainer {
   width: inherit;
-  position: absolute;
+  position: relative;
+  margin: 5px 0;
 }
 
 .chatDate {
@@ -1435,4 +1436,32 @@ header h1 {
 .chatDate span {
   color: black;
   font-size: 13px;
+}
+
+.otherUsersMessageContainer {
+  width: inherit;
+  position: relative;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.myMessageContainer {
+  width: inherit;
+  position: relative;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.otherUsersMessage {
+  width: 350px;
+  height: 150px;
+  background-color: black;
+}
+
+.myMessage {
+  width: 350px;
+  height: 150px;
+  background-color: black;
 }
