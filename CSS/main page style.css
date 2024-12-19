@@ -364,7 +364,7 @@ body {
   grid-template-columns: 50px 150px 800px;
   background: white;
   padding: 10px 15px 1.5px 0;
-  margin-top: 140px;
+  margin-top: 130px;
   box-shadow: darkmagenta 0px 0px 3px;
 }
 
@@ -808,7 +808,7 @@ header h1 {
   height: 100vh;
   width: 100vw;
   position: relative;
-  margin-top: 140px;
+  margin-top: 130px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -925,6 +925,7 @@ header h1 {
   resize: none;
   color: black;
   padding: 4px;
+  outline: none;
 }
 
 #descriptionContainer textarea::placeholder {
@@ -975,7 +976,7 @@ header h1 {
 
 #adContainer {
   position: relative;
-  margin-top: 140px;
+  margin-top: 130px;
   left: 600px;
   display: grid;
   grid-template-rows: 250px 60px 190px;
@@ -1135,7 +1136,7 @@ header h1 {
   grid-template-columns: 150px 800px;
   background: white;
   padding: 10px 15px 1.5px 15px;
-  margin-top: 140px;
+  margin-top: 130px;
   box-shadow: darkmagenta 0px 0px 3px;
 }
 
@@ -1270,7 +1271,7 @@ header h1 {
   box-shadow: darkmagenta 0px 0px 3px;
   padding: 20px 0;
   position: relative;
-  margin-top: 180px;
+  margin-top: 130px;
   left: 420px;
   display: flex;
   flex-direction: column;
@@ -1331,6 +1332,7 @@ header h1 {
   left: 420px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 #returnToInbox {
@@ -1460,7 +1462,7 @@ header h1 {
   max-width: 650px;
   height: fit-content;
   min-height: 50px;
-  font-size: 14px;
+  font-size: 13px;
   padding: 10px;
   background-color: white;
   border-radius: 15px 15px 15px 0;
@@ -1475,7 +1477,7 @@ header h1 {
   max-width: 650px;
   height: fit-content;
   min-height: 50px;
-  font-size: 14px;
+  font-size: 13px;
   padding: 10px;
   background-color: lightblue;
   border-radius: 15px 15px 0 15px;
@@ -1506,19 +1508,54 @@ header h1 {
 
 .writeAMessageContainer {
   width: 100%;
-  height: 200px;
-  background-color: #2C3539;
+  height: fit-content;
 }
 
 .writeAMessageContainer textarea {
   width: 950px;
-  height: 130px;
+  height: 120px;
   border: 1px solid darkmagenta;
   background-color: white;
+  display: block;
   margin: 0 auto;
   resize: none;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
 }
 
-.writeAMessageContainer textarea::placeholder {
-  
+.sendMessageContainer {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  height: fit-content;
+}
+
+.sendMessage {
+  background-color: darkmagenta;
+  height: 40px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  color: white;
+  font-size: 17px;
+  line-height: 1;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.sendMessage:hover {
+  background-color: darkorchid;
+}
+
+.sendMessage:active {
+  background-color: darkmagenta;
+}
+
+.sendMessage i {
+  font-size: 25px;
+  margin-right: 5px;
 }
