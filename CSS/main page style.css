@@ -169,10 +169,10 @@ body {
   right: 100px;
 }
 
-#mainHeader {
+.mainHeader {
   background: white;
   width: 100%;
-  height: 140px;
+  height: 100px;
   border-bottom: 2px solid darkmagenta;
   position: fixed;
   top: 0px;
@@ -185,9 +185,10 @@ body {
   /* SearchBar form ˇˇˇˇˇˇ */
 
  #searchBarContainer {
-  height: inherit;
+  height: fit-content;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 475px;
   position: relative;
   right: 90px;
@@ -245,7 +246,6 @@ body {
   width: 120px;
   font-size: 17px;
   color: darkmagenta;
-  position: absolute;
   top: 95px;
 }
 
@@ -258,7 +258,7 @@ body {
 
 #createAd {
   position: relative;
-  right: 90px;
+  right: 50px;
   width: 140px;
   height: 42px;
   background: darkorchid;
@@ -284,6 +284,7 @@ body {
 
 #menu {
   position: fixed;
+  top: 170px;
   left: 50px;
   width: 240px;
   height: 430px;
@@ -363,7 +364,7 @@ body {
   grid-template-columns: 50px 150px 800px;
   background: white;
   padding: 10px 15px 1.5px 0;
-  margin-top: 180px;
+  margin-top: 140px;
   box-shadow: darkmagenta 0px 0px 3px;
 }
 
@@ -807,7 +808,7 @@ header h1 {
   height: 100vh;
   width: 100vw;
   position: relative;
-  top: 140px;
+  margin-top: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -974,7 +975,7 @@ header h1 {
 
 #adContainer {
   position: relative;
-  margin-top: 180px;
+  margin-top: 140px;
   left: 600px;
   display: grid;
   grid-template-rows: 250px 60px 190px;
@@ -1134,7 +1135,7 @@ header h1 {
   grid-template-columns: 150px 800px;
   background: white;
   padding: 10px 15px 1.5px 15px;
-  margin-top: 180px;
+  margin-top: 140px;
   box-shadow: darkmagenta 0px 0px 3px;
 }
 
@@ -1278,7 +1279,7 @@ header h1 {
 .messageContainer {
   width: 950px;
   height: 60px;
-  border: 2px solid darkmagenta;
+  border: 1px solid darkmagenta;
   margin: 5px auto;
   padding: 0 10px;
   display: flex;
@@ -1325,16 +1326,15 @@ header h1 {
   height: fit-content;
   width: 1000px;
   box-shadow: darkmagenta 0px 0px 3px;
-  padding: 0 0 30px 0;
   position: relative;
-  margin-top: 180px;
+  margin-top: 130px;
   left: 420px;
   display: flex;
   flex-direction: column;
 }
 
 #returnToInbox {
-  height: 40px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1342,16 +1342,16 @@ header h1 {
 }
 
 #returnToInbox i, #returnToInbox span {
-  font-size: 20px;
+  font-size: 15px;
   color: darkmagenta;
   font-weight: 500;
 }
 
 #rateUser {
-  background-color: floralwhite;
   width: 950px;
-  border: 2px solid darkmagenta;
-  height: 55px;
+  border-top: 1px solid darkmagenta;
+  border-bottom: 1px solid darkmagenta;
+  height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1360,7 +1360,7 @@ header h1 {
 }
 
 .rate {
-  font-size: 22px;
+  font-size: 17px;
   color: darkmagenta;
 }
 
@@ -1370,10 +1370,10 @@ header h1 {
 }
 
 #chatInfo {
-  background-color: floralwhite;
   width: 950px;
-  border: 2px solid darkmagenta;
-  height: 55px;
+  border-top: 1px solid darkmagenta;
+  border-bottom: 1px solid darkmagenta;
+  height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1389,30 +1389,34 @@ header h1 {
   width: 115px;
 }
 
+.chatName {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 #chatInfo i {
   margin-right: 5px;
 }
 
 #chatPicture {
-  height: 45px;
+  height: 40px;
 }
 
 #chat {
   width: 950px;
-  height: 500px;
-  border: 2px solid darkmagenta;
+  height: 400px;
+  border: 1px solid darkmagenta;
+  border-radius: 3px;
   margin: 5px auto;
   padding: 20px 10px 10px 10px;
   position: relative;
-}
-
-#chatBackgroundImage {
-  opacity: 0.4;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url("images/Pet paws.jpg");
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
 }
 
 .chatDateContainer {
@@ -1422,11 +1426,10 @@ header h1 {
 }
 
 .chatDate {
-  height: 27px;
+  height: 22px;
   width: 120px;
   border-radius: 20px;
-  background-color:  white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color:  lightgray;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1442,7 +1445,6 @@ header h1 {
   width: 100%;
   display: flex;
   position: relative;
-  margin: 15px 0;
   flex-direction: column;
 }
 
@@ -1452,13 +1454,13 @@ header h1 {
   flex-direction: column;
   align-items: flex-end;
   position: relative;
-  margin: 15px 0;
 }
 
 .otherUsersMessage {
-  max-width: 600px;
+  max-width: 650px;
   height: fit-content;
   min-height: 50px;
+  font-size: 14px;
   padding: 10px;
   background-color: white;
   border-radius: 15px 15px 15px 0;
@@ -1470,15 +1472,53 @@ header h1 {
 }
 
 .myMessage {
-  max-width: 600px;
+  max-width: 650px;
   height: fit-content;
   min-height: 50px;
+  font-size: 14px;
   padding: 10px;
-  background-color: white;
+  background-color: lightblue;
   border-radius: 15px 15px 0 15px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   display: inline;
   white-space: initial;
   word-break: break-all;
   margin: 5px 0;
+}
+
+.myMessageTimeContainer {
+  text-align: end;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.messageTime {
+  font-size: 13px;
+  color: dimgray;
+}
+
+.myMessageTimeContainer i {
+  color: #0066b2; /* Bayern blue */
+  font-size: 24px;
+}
+
+.writeAMessageContainer {
+  width: 100%;
+  height: 200px;
+  background-color: #2C3539;
+}
+
+.writeAMessageContainer textarea {
+  width: 950px;
+  height: 130px;
+  border: 1px solid darkmagenta;
+  background-color: white;
+  margin: 0 auto;
+  resize: none;
+}
+
+.writeAMessageContainer textarea::placeholder {
+  
 }
