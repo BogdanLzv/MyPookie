@@ -1418,7 +1418,7 @@ header h1 {
 .chatDateContainer {
   width: inherit;
   position: relative;
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
 .chatDate {
@@ -1439,29 +1439,46 @@ header h1 {
 }
 
 .otherUsersMessageContainer {
-  width: inherit;
-  position: relative;
-  margin: 5px 0;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  position: relative;
+  margin: 15px 0;
+  flex-direction: column;
 }
 
 .myMessageContainer {
-  width: inherit;
-  position: relative;
-  margin: 5px 0;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  margin: 15px 0;
 }
 
 .otherUsersMessage {
-  width: 350px;
-  height: 150px;
-  background-color: black;
+  max-width: 600px;
+  height: fit-content;
+  min-height: 50px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px 15px 15px 0;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: inline;
+  white-space: initial;
+  word-break: break-all;
+  margin: 5px 0;
 }
 
 .myMessage {
-  width: 350px;
-  height: 150px;
-  background-color: black;
+  max-width: 600px;
+  height: fit-content;
+  min-height: 50px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px 15px 0 15px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: inline;
+  white-space: initial;
+  word-break: break-all;
+  margin: 5px 0;
 }
