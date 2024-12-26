@@ -1643,3 +1643,9 @@ header h1 {
   font-size: 14px;
   color: dimgray;
 }
+
+/* MY REVIEWS PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+
+#reviewsHeader {
+  background-color: lightblue;
+}
