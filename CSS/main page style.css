@@ -1649,3 +1649,15 @@ header h1 {
 #reviewsHeader {
   background-color: lightblue;
 }
+
+#reviewsContainer {
+  height: 1000px;
+  width: 1000px;
+  box-shadow: darkmagenta 0px 0px 3px;
+  padding: 20px 0;
+  position: relative;
+  margin-top: 130px;
+  left: 420px;
+  display: flex;
+  flex-direction: column;
+}
