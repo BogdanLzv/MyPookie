@@ -1671,7 +1671,7 @@ header h1 {
   height: 90px;
   background-color: white;
   border: 1px solid darkmagenta;
-  margin: 5px auto;
+  margin: 5px auto 15px;
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
@@ -1730,4 +1730,51 @@ header h1 {
   font-size: 18px;
   cursor: pointer;
   color: dimgray;
+}
+
+.reviewContainer {
+  width: 950px;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid darkmagenta;
+  margin: 5px auto;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviewNameAndDate {
+  width: 930px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px
+}
+
+.reviewName {
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviewName i {
+  color: darkgreen;
+  font-size: 21px;
+  margin-right: 5px;
+}
+
+.reviewDate {
+  color: dimgray;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.reviewComment {
+  width: fit-content;
+  background-color: pink;
+  padding: 5px;
 }
