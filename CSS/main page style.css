@@ -586,7 +586,7 @@ body {
   width: 210px;
   height: 50px;
   background: white;
-  border: solid 2px darkmagenta;
+  border: 2px solid darkmagenta;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -766,10 +766,24 @@ body {
 /* CREATE AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 #createAdBody {  /* style for "Create Ad" body */
-  background: floralwhite;
+  background-image: url("images/Background animation/fairmont-copley-plaza-pet-adoption-5-052024-131c5879ce5343d7a2e26c0639065a81.jpg");
+  background-size: cover;
   height: 100vw;
   width: 100vw;
   position: fixed;
+}
+
+#createAdHeader {
+  background: white;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid darkmagenta;
 }
 
 #createAdBody #logo {
@@ -817,11 +831,28 @@ header h1 {
   padding-left: 8px;
   width: 210px;
   height: 50px;
-  border: solid 2px darkmagenta;
+  border: none;
+  box-shadow: darkmagenta 0px 0px 4px;
   border-radius: 4px;
   outline: none;
   color: black;
   font-size: 20px;
+}
+
+/* Animal kind input ˘˘˘˘˘˘ */
+
+#createAd-animalKind-select {
+  width: 210px;
+  height: 50px;
+  background: white;
+  box-shadow: darkmagenta 0px 0px 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 0 8px;
+  cursor: pointer;
+  position: relative;
 }
 
 /* Duration input ˘˘˘˘˘˘ */
@@ -867,7 +898,7 @@ header h1 {
   background: white;
   height: 160px;
   width: 160px;
-  border: solid 2px darkmagenta;
+  box-shadow: darkmagenta 0px 0px 4px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -896,7 +927,7 @@ header h1 {
   background: white;
   height: 160px;
   width: 470px;
-  border: solid 2px darkmagenta;
+  box-shadow: darkmagenta 0px 0px 4px;
   border-radius: 4px;
   font-size: 15px;
   font-weight: 400;
