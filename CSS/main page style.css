@@ -766,8 +766,9 @@ body {
 /* CREATE AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 #createAdBody {  /* style for "Create Ad" body */
-  background-image: url("images/Background animation/fairmont-copley-plaza-pet-adoption-5-052024-131c5879ce5343d7a2e26c0639065a81.jpg");
+  background-image: url("images/fairmont-copley-plaza-pet-adoption-5-052024-131c5879ce5343d7a2e26c0639065a81.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vw;
   width: 100vw;
   position: fixed;
