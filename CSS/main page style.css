@@ -348,14 +348,12 @@ body {
   cursor: pointer;
 }
 
-#menu p {
+#menu a {
   float: left;
   line-height: 50px;
   width: inherit;
-}
-
-#menu p:hover {
-  cursor: pointer;
+  color: darkmagenta;
+  text-decoration: none;
 }
 
 #menu h2 {
