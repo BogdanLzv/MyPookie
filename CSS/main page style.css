@@ -176,8 +176,6 @@ body {
 
 #logo {
   width: 300px;
-  position: relative;
-  right: 100px;
 }
 
 .mainHeader {
@@ -192,6 +190,24 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+/* Hyperlinks for "MyPookie" LOGO ( when you click on logo you go straight to "Main page") ˇˇˇˇˇˇ */
+
+#mainPageHyperlink {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 1px;
+}
+
+#mainPageHyperlink2 {  /* Another "main page" hyperlink for headers that have search bar ˇˇˇˇˇˇ */
+  display: flex;
+  align-items: center;
+  width: 300px;
+  position: relative;
+  right: 101px;
+}
+
 
   /* SearchBar form ˇˇˇˇˇˇ */
 
@@ -780,7 +796,7 @@ body {
   top: 0px;
   z-index: 3;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-bottom: 2px solid darkmagenta;
 }
@@ -1327,8 +1343,6 @@ header h1 {
 /* CHAT PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 #chatLogo {
-  position: absolute;
-  left: 1px;
   width: 300px;
 }
 
@@ -1416,8 +1430,17 @@ header h1 {
   padding-left: 10px;
 }
 
-#returnToInbox i, #returnToInbox span {
-  font-size: 15px;
+#returnToInbox a {
+  text-decoration: none;
+}
+
+#returnToInbox a:hover {
+  text-decoration: underline;
+}
+
+
+#returnToInbox i, #returnToInbox a {
+  font-size: 17px;
   color: darkmagenta;
   font-weight: 500;
 }
