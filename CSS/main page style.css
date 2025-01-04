@@ -543,6 +543,7 @@ body {
 /* Detail search section ˘˘˘˘˘˘ */
 
 #detailSearchSection {
+  display: none;
   background: white;
   width: 100vw;
   height: 200px;
@@ -551,7 +552,6 @@ body {
   position: fixed;
   border-right: none;
   top: 100px;
-  display: none;
   padding-top: 15px;
 }
 
@@ -764,7 +764,7 @@ body {
 /* CREATE AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
 #createAdBody {  /* style for "Create Ad" body */
-  background-image: url("images/fairmont-copley-plaza-pet-adoption-5-052024-131c5879ce5343d7a2e26c0639065a81.jpg");
+  background-image: url("images/ai-generated-a-dog-and-cat-standing-on-a-purple-background-free-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vw;
@@ -1023,6 +1023,7 @@ header h1 {
   background: darkorchid;
   font-size: 19px;
   border: none;
+  box-shadow: black 0px 0px 3px;
 }
 
 #continueButton a {

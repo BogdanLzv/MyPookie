@@ -145,6 +145,8 @@ const bodyCover = document.getElementById("bodyCover")
 
 // Function for opening detail search section ˘˘˘˘˘˘
 
+detailSearchSection.style.display = "none";  // Sets initial state for the detail search section to "none"
+
 detailSearch.onclick = function() {
     if (detailSearchSection.style.display === "none") {
         detailSearchSection.style.display = "flex";
