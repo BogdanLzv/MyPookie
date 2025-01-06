@@ -515,8 +515,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  padding: 2px;
+  color: darkmagenta;
 }
 
 .adInformation {
@@ -524,19 +526,35 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding: 2px;
-  height: 65%;
   float: left;
   color: darkmagenta;
 }
 
-.adInformation i {
+.adInformationContainer i {
   color: black;
 }
 
 /* Ad names ˘˘˘˘˘˘ */
 
+.userName {
+  max-width: 150px;
+  font-size: 20px;
+  float: left;
+  padding-left: 2px;
+  margin-bottom: 5px;
+  padding-top: 2px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.userName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .adName {
-  font-size: 30px;
+  font-size: 25px;
   color: black;
   font-weight: 500;
   padding: 2px;
