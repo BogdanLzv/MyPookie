@@ -1193,6 +1193,51 @@ header h1 {
   margin: 0 4px;
 }
 
+.nameAndSendMessage {
+  width: inherit;
+  height: 47px;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: floralwhite;
+  border: 1px solid darkmagenta;
+  margin: 0 4px;
+}
+
+.adUserName {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  height: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.AdSendMessageContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+  padding: 4px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.AdSendMessageContainer span {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.AdSendMessageContainer span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.AdSendMessageContainer i {
+  margin-right: 4px;
+  font-size: 23px;
+}
+
 .adDetailInformation span {
   color: darkmagenta;
   font-size: 24px;
@@ -1216,7 +1261,7 @@ header h1 {
   color: darkred;
 }
 
-#sendMessageContainer i, #adLocationContainer i, #adTimePeriodContainer i, #adPriceContainer i, #adBookmarkContainer i {
+#adLocationContainer i, #adTimePeriodContainer i, #adPriceContainer i, #adBookmarkContainer i {
   margin-right: 15px;
 }
 
