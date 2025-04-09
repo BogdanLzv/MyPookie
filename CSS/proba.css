@@ -1,0 +1,44 @@
+table, tr, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+tr {
+    position: relative;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+table {
+    position: relative;
+    top: 300px;
+    left: 300px;
+}
+
+tr::after {
+    content: ''; /* Empty content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(144, 238, 144, 0.5); /* Light green color with some transparency */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Show the overlay when hovering over the image */
+tr:hover::after {
+    opacity: 1; /* Make the overlay visible */
+}
+
+img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
