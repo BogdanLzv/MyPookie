@@ -380,7 +380,7 @@ body {
 
 /* Ad section ˘˘˘˘˘˘ */
 
-#Adscontainer {
+#adsContainer {
   width: fit-content;
   position: relative;
   display: grid;
