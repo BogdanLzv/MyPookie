@@ -378,110 +378,62 @@ body {
   font-weight: 500;
 }
 
-/* Ad section ˘˘˘˘˘˘ */
+
+/* Ads section ˘˘˘˘˘˘ */
+
+tr {
+  position: relative;
+}
+
+td {
+height: 150px;
+}
+
+
+td::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(238, 144, 218, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+td:hover::after {
+  opacity: 1;
+}
+
 
 #adsContainer {
   width: fit-content;
   position: relative;
-  display: grid;
   left: 410px;
-  grid-template-rows: 150px 150px 150px 150px;
-  grid-template-columns: 150px 800px;
   background: white;
   padding: 10px 15px 1.5px 15px;
   margin-top: 130px;
   box-shadow: darkmagenta 0px 0px 3px;
 }
 
-/* Ads position ˇˇˇˇˇˇ */
-
-
-/* Picture container position ˇˇˇˇˇˇ */
-
-#pictureContainer1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
+.pictureContainer {
+  height: fit-content;
+  width: fit-content;
 }
-
-#pictureContainer2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-#pictureContainer3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-#pictureContainer4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-/* Information container position ˇˇˇˇˇˇ */
-
-#informationContainer1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#informationContainer2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#informationContainer3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#informationContainer4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-/* Ad pictures ˘˘˘˘˘˘ */
 
 .adPicture {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Ads Information section ˘˘˘˘˘˘ */
-
-.informationSection {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+  aspect-ratio: 1 / 1;
 }
 
 .adInformationContainer {
-  max-width: 150px;
-  height: 147px;
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -495,8 +447,6 @@ body {
 .adInformationContainer i {
   color: black;
 }
-
-/* Ad names ˘˘˘˘˘˘ */
 
 .userName {
   max-width: 150px;
@@ -522,19 +472,23 @@ body {
   padding: 2px;
 }
 
-/* Ad comment */
+.adComentContainer {
+  height: 150px;
+}
 
 .adComment {
-  padding: 10px 15px 10px;
   border-radius: 3px;
   font-size: 18px;
   width: 650px;
-  height: 135px;
   background: white;
   border: gray 1px solid;
   text-overflow: ellipsis;
   overflow: hidden;
+  height: 133px;
+  padding: 8.5px 15px;
+  display: block;
 }
+
 
 /* Detail search section ˘˘˘˘˘˘ */
 
