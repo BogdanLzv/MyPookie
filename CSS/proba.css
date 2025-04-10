@@ -15,7 +15,7 @@ tr {
 
 
 
-tr::after {
+/*tr::after {
     content: '';
     position: absolute;
     top: 0;
@@ -30,10 +30,10 @@ tr::after {
 }
 
 /* Show the overlay when hovering over the image */
-tr:hover::after {
+/*tr:hover::after {
     opacity: 1;
 }
-
+*/
 
 #adsContainer {
     width: fit-content;
