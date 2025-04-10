@@ -464,35 +464,6 @@ body {
   margin: 1.5px;
 }
 
-/* Likes and dislikes next to the pictures ˘˘˘˘˘˘ */
-
-.reviewsSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 5px 0;
-}
-
-.likes {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: inherit;
-  color: darkgreen;
-  font-weight: 600;
-}
-
-.dislikes {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: inherit;
-  color: darkred;
-  font-weight: 600;
-}
-
 /* Ad pictures ˘˘˘˘˘˘ */
 
 .adPicture {
@@ -518,15 +489,6 @@ body {
   font-size: 18px;
   font-weight: 600;
   padding: 2px;
-  color: darkmagenta;
-}
-
-.adInformation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2px;
-  float: left;
   color: darkmagenta;
 }
 
