@@ -38,15 +38,14 @@ td:hover::after {
 
 
 #adsContainer {
-    width: fit-content;
-    position: relative;
-    left: 410px;
-    background: white;
-    padding-top: 10px;
-    padding-bottom: 1.5px;
-    margin-top: 130px;
-    box-shadow: darkmagenta 0px 0px 3px;
-    
+  width: fit-content;
+  position: relative;
+  left: 410px;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 1.5px;
+  margin-top: 130px;
+  box-shadow: darkmagenta 0px 0px 3px;
   }
 
   .pictureContainer {
@@ -117,5 +116,4 @@ td:hover::after {
     display: block;
     margin-right: 10px;
   }
-
   

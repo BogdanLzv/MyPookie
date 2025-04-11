@@ -409,7 +409,7 @@ td:hover::after {
 }
 
 
-#adsContainer {
+.adsContainer {
   width: fit-content;
   position: relative;
   left: 410px;
