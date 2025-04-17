@@ -18,30 +18,45 @@
   border-radius: 2px;
 }
 
-/* LOGIN PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+/* LOGIN/REGISTER PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
 
-#loginBody {
-  background-image: url("Images/Cat and Dog.jpg");
+.loginBody {
+  background: url("Images/Cat and Dog.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
   display: inline;
+  overflow-y: hidden;
+}
+
+#loginPageMainContent {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top:40px;
 }
 
 #loginLogo {
-  height: 80px;
   position: absolute;
-  top: 10px;
+  left: 1px;
+  width: 300px;
 }
 
 #loginHeader {
-  width: inherit;
-  display: inline;
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#loginHeader h1 {
+.welcomeMessage {
+  display: block;
   position: relative;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   text-shadow: 1px 0 10px  black;
 }
@@ -50,29 +65,56 @@
 
 aside h2 {
   position: relative;
-  right: 330px;
-  top: 120px;
   font-size: 35px;
   color: white;
   text-align: center;
   text-shadow: 1px 0 10px  black;
+  position: relative;
+  left: 20px;
 }
 
 /* Login Form ˘˘˘˘˘˘˘ */
 
-#loginForm {
+
+#loginAndRegisterForm {
+  position: relative;
+  right: 60px;
+  top: 50px;
   color: white;
   height: 370px;
   width: 340px;
   background: transparent;
   backdrop-filter: blur(25px);
   box-shadow: 0 0 10px black;
-  position: relative;
-  left: 870px;
-  bottom: 210px;
+  text-shadow: 1px 0 10px  black;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
   border-radius: 8px;
-  padding: 25px;
   border: 2px solid white;
+  transition: height .2s ease;
+  overflow: hidden;
+}
+
+#loginAndRegisterForm.active {
+  height: 460px;
+}
+
+#loginAndRegisterForm.active #loginForm {
+  transition: none;
+  transform: translateX(-340px);
+}
+
+#loginAndRegisterForm.active #registerForm {
+  transition: none;
+  transform: translateX(0);
+  transition: .2s ease;
+}
+
+#loginForm {
+  position: absolute;
+  transition: transform 0.2s ease;
+  transform: translateX(0);
 }
 
 #loginForm h1 {
@@ -80,6 +122,7 @@ aside h2 {
   color: white;
   text-align: center;
   position: relative;
+
 }
 
 .inputBox {
@@ -87,6 +130,10 @@ aside h2 {
   width: 100%;
   height: 50px;
   margin: 20px 0;
+}
+
+.inputBox::placeholder {
+  text-shadow: 1px 0 10px  black;
 }
 
 .inputBox input {
@@ -99,6 +146,10 @@ aside h2 {
   outline: none;
   background: transparent;
   color: white;
+}
+
+.inputBox input[type=text] {
+  text-shadow: 1px 0 10px  black;
 }
 
 .inputBox input::placeholder {
@@ -114,10 +165,16 @@ aside h2 {
 }
 
 #rememberMe {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px 0;
   font-size: 16px;
+
+}
+
+#rememberMe label {
+  margin-right: 40px;
 }
 
 #rememberMe input {
@@ -153,15 +210,104 @@ aside h2 {
   margin-top: 15px;
 }
 
-#registerLink a {
+.register {
   color: white;
   text-decoration: none;
   font-weight: 550;
+  cursor: pointer;
+}
+
+.register:hover {
+  text-decoration: underline;
 }
 
 #registerLink a:hover {
   text-decoration: underline;
 }
+
+/* Register Form ˘˘˘˘˘˘˘ */
+
+
+#registerForm {
+  position: absolute;
+  transition: none;
+  transform: translateX(340px);
+}
+
+#registerForm h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+#registerForm button {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 40px;
+  background: white;
+  cursor: pointer;
+  color: #2C3539;
+  font-weight: 600;
+  margin-top: 7px;
+}
+
+.registerInputBox{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.registerInputBox::placeholder {
+  text-shadow: 1px 0 10px  black;
+}
+
+.registerInputBox input {
+  padding: 0 32px 0 15px;
+  font-size: 16px;
+  width: 280px;
+  height: 80%;
+  border: 2px solid white;
+  border-radius: 40px;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.registerInputBox input[type=text] {
+  text-shadow: 1px 0 10px  black;
+}
+
+
+
+.registerInputBox input::placeholder {
+  color: white;
+}
+
+.registerInputBox i {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  color: white;
+  font-size: 18px;
+}
+
+.login {
+  color: white;
+  text-decoration: none;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
+
 
 
 
@@ -378,139 +524,61 @@ body {
   font-weight: 500;
 }
 
-/* Ad section ˘˘˘˘˘˘ */
 
-#Adscontainer {
-  width: fit-content;
+/* Ads section ˘˘˘˘˘˘ */
+
+tr {
   position: relative;
-  display: grid;
-  left: 410px;
-  grid-template-rows: 150px 150px 150px 150px;
-  grid-template-columns: 150px 800px;
-  background: white;
-  padding: 10px 15px 1.5px 15px;
-  margin-top: 130px;
-  box-shadow: darkmagenta 0px 0px 3px;
 }
 
-/* Ads position ˇˇˇˇˇˇ */
-
-
-/* Picture container position ˇˇˇˇˇˇ */
-
-#pictureContainer1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
+td {
+height: 150px;
 }
 
-#pictureContainer2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
 
-#pictureContainer3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-#pictureContainer4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-/* Information container position ˇˇˇˇˇˇ */
-
-#informationContainer1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#informationContainer2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#informationContainer3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#informationContainer4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-/* Likes and dislikes next to the pictures ˘˘˘˘˘˘ */
-
-.reviewsSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 5px 0;
-}
-
-.likes {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: inherit;
-  color: darkgreen;
-  font-weight: 600;
-}
-
-.dislikes {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: inherit;
-  color: darkred;
-  font-weight: 600;
-}
-
-/* Ad pictures ˘˘˘˘˘˘ */
-
-.adPicture {
+td::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(238, 144, 218, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
   max-width: 100%;
   max-height: 100%;
 }
 
-/* Ads Information section ˘˘˘˘˘˘ */
+td:hover::after {
+  opacity: 1;
+}
 
-.informationSection {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
+
+.adsContainer {
+  width: fit-content;
+  position: relative;
+  left: 410px;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 1.5px;
+  margin-top: 130px;
+  box-shadow: darkmagenta 0px 0px 3px;
+}
+
+.pictureContainer {
+  padding-left: 10px;
+}
+
+.adPicture {
+  height: 150px;
+  width: 150px;
+  display: block;
 }
 
 .adInformationContainer {
-  max-width: 150px;
-  height: 147px;
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -521,20 +589,9 @@ body {
   color: darkmagenta;
 }
 
-.adInformation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2px;
-  float: left;
-  color: darkmagenta;
-}
-
 .adInformationContainer i {
   color: black;
 }
-
-/* Ad names ˘˘˘˘˘˘ */
 
 .userName {
   max-width: 150px;
@@ -560,19 +617,24 @@ body {
   padding: 2px;
 }
 
-/* Ad comment */
+.adComentContainer {
+  height: 150px;
+}
 
 .adComment {
-  padding: 10px 15px 10px;
   border-radius: 3px;
   font-size: 18px;
-  width: 650px;
-  height: 135px;
+  width: 640px;
   background: white;
   border: gray 1px solid;
   text-overflow: ellipsis;
   overflow: hidden;
+  height: 133px;
+  padding: 8.5px 15px;
+  display: block;
+  margin-right: 10px;
 }
+
 
 /* Detail search section ˘˘˘˘˘˘ */
 
@@ -1274,90 +1336,6 @@ header h1 {
 #profileTableHeader {
   background-color: lightblue;
 }
-
-/* My ads container */
-
-#myAdscontainer {
-  width: fit-content;
-  position: relative;
-  display: grid;
-  left: 410px;
-  grid-template-rows: 150px 150px 150px 150px;
-  grid-template-columns: 150px 800px;
-  background: white;
-  padding: 10px 15px 1.5px 15px;
-  margin-top: 130px;
-  box-shadow: darkmagenta 0px 0px 3px;
-}
-
-/* My Ads Picture container position ˇˇˇˇˇˇ */
-
-#myAdPictureContainer1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-#myAdPictureContainer2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-#myAdPictureContainer3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-#myAdPictureContainer4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 1.5px;
-}
-
-/* My Ads Information Container Position ˇˇˇˇˇˇ */
-
-#myAdInformationContainer1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#myAdInformationContainer2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#myAdInformationContainer3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
-#myAdInformationContainer4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: 1.5px;
-}
-
 
 
 /* MY AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
