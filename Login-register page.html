@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome - MyPookie</title>
+        <link rel="stylesheet" href="CSS/My pookie style.css">
+        <link rel="icon" href="CSS/images/LOGO 3.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body class="loginBody">
+
+        <header id="loginHeader">
+            <img id="loginLogo" src="CSS/Images/LOGO 2.png"/>
+            <h1 class="welcomeMessage">Great to see you again</h1>
+        </header>
+
+        <!--- Complementary text ˘˘˘˘˘˘ --->
+
+        <div id="loginPageMainContent">
+
+            <aside>
+                <h2>Connect with fellow pet<br>lovers and help them relax<br>while you provide love and<br>companionship to their little<br>family members.</h2>
+            </aside>
+
+            <!-- Login and Register Form ˘˘˘˘˘˘ -->
+
+            <div id="loginAndRegisterForm">
+
+                <div id="loginForm">
+
+                    <form>
+
+                        <h1>Login</h1>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Username" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password" required>
+                            <i class='bx bxs-lock-alt' ></i>
+                        </div>
+
+                        <div id="rememberMe">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+
+                        <button type="submit">Login</button>
+
+                        <div id="registerLink">
+                            <p>Don't have an account? <span class="register">Register</span>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="registerForm">
+
+                    <form>
+
+                        <h1>Registration</h1>
+
+                        <div class="registerInputBox">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+
+                        <div class="registerInputBox">
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+
+                        <div class="registerInputBox">
+                            <input type="text" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="registerInputBox">
+                            <input type="password" placeholder="New Password" required>
+                        </div>
+
+                        <div class="registerInputBox">
+                            <input type="password" placeholder="Repeat Password" required>
+                        </div>
+
+                        <button type="submit">Register</button>
+
+                        <div id="registerLink">
+                            <p>Already have an account? <span class="login">Login</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="JavaScript/Login-register page.js"></script>
+    </body>
+</html>
