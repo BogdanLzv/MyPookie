@@ -1,6 +1,3 @@
-
-// MOUSE TRANSITIONS FOR THE NAV OF THE SITE OR "THE MENU" ˘˘˘˘˘˘˘˘
-
 import {
     tableRowHover,
     tableRowMouseOut,
@@ -8,6 +5,12 @@ import {
     tableRowMouseUp,
     detailListDisplay
 } from './Modules/Modules.js';
+
+
+
+// MOUSE TRANSITIONS FOR THE NAV OF THE SITE OR "THE MENU" ˘˘˘˘˘˘˘˘
+
+
 
 // Capturing elements in a first table row ˘˘˘˘˘˘
 
