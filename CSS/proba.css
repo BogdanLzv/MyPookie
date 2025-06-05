@@ -1,44 +1,1733 @@
-table, tr, td {
-    border: 1px black solid;
-    border-collapse: collapse;
-}
-
-tr {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 2px;
+  }
+  
+  /* LOGIN/REGISTER PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  .loginBody {
+    background: url("Images/Cat and Dog.jpg") no-repeat;
+    background-size: cover;
+    display: inline;
+    overflow-y: hidden;
+  }
+  
+  #loginPageMainContent {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: relative;
-}
-
-td {
-    width: 100px;
+    top:40px;
+  }
+  
+  #loginLogo {
+    position: absolute;
+    left: 1px;
+    width: 300px;
+  }
+  
+  #loginHeader {
+    width: 100%;
     height: 100px;
-}
-
-
-
-table {
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .welcomeMessage {
+    display: block;
     position: relative;
-    top: 300px;
-    left: 300px;
-}
-
-tr::after {
-    content: ''; /* Empty content */
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 0 10px  black;
+  }
+  
+  /* Complementary text ˘˘˘˘˘˘ */
+  
+  aside h2 {
+    position: relative;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 0 10px  black;
+    position: relative;
+    left: 20px;
+  }
+  
+  /* Login Form ˘˘˘˘˘˘˘ */
+  
+  
+  #loginAndRegisterForm {
+    position: relative;
+    right: 60px;
+    top: 50px;
+    color: white;
+    height: 370px;
+    width: 340px;
+    background: transparent;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 10px black;
+    text-shadow: 1px 0 10px  black;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: height .2s ease;
+    overflow: hidden;
+  }
+  
+  #loginAndRegisterForm.active {
+    height: 460px;
+  }
+  
+  #loginAndRegisterForm.active #loginForm {
+    transition: none;
+    transform: translateX(-340px);
+  }
+  
+  #loginAndRegisterForm.active #registerForm {
+    transition: none;
+    transform: translateX(0);
+    transition: .2s ease;
+  }
+  
+  #loginForm {
+    position: absolute;
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+  }
+  
+  #loginForm h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+  
+  }
+  
+  .inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+  }
+  
+  .inputBox::placeholder {
+    text-shadow: 1px 0 10px  black;
+  }
+  
+  .inputBox input {
+    padding: 0 32px 0 15px;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 40px;
+    outline: none;
+    background: transparent;
+    color: white;
+  }
+  
+  .inputBox input[type=text] {
+    text-shadow: 1px 0 10px  black;
+  }
+  
+  .inputBox input::placeholder {
+    color: white;
+  }
+  
+  .inputBox i {
+    position: absolute;
+    top: 16px;
+    right: 13px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  #rememberMe {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  #rememberMe label {
+    margin-right: 40px;
+  }
+  
+  #rememberMe input {
+    accent-color: white;
+  }
+  
+  #rememberMe a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #rememberMe a:hover {
+    text-decoration: underline;
+  }
+  
+  #loginForm button {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+    color: #2C3539;
+    font-weight: 700;
+    margin-top: 7px;
+  }
+  
+  #registerLink {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .register {
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    cursor: pointer;
+  }
+  
+  .register:hover {
+    text-decoration: underline;
+  }
+  
+  #registerLink a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Register Form ˘˘˘˘˘˘˘ */
+  
+  
+  #registerForm {
+    position: absolute;
+    transition: none;
+    transform: translateX(340px);
+  }
+  
+  #registerForm h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  #registerForm button {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+    color: #2C3539;
+    font-weight: 700;
+    margin-top: 7px;
+  }
+  
+  .registerInputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+  }
+  
+  .registerInputBox i {
+    position: absolute;
+    color: white;
+    right: 13px;
+    top: 11px;
+    font-size: 16px;
+  }
+  
+  .registerInputBox::placeholder {
+    text-shadow: 1px 0 10px  black;
+  }
+  
+  .registerInputBox input {
+    padding: 0 32px 0 15px;
+    font-size: 16px;
+    width: 280px;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 40px;
+    outline: none;
+    background: transparent;
+    color: white;
+  }
+  
+  .registerInputBox input[type=text] {
+    text-shadow: 1px 0 10px  black;
+  }
+  
+  .registerInputBox input::placeholder {
+    color: white;
+  }
+  
+  .login {
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    cursor: pointer;
+  }
+  
+  .login:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  /* MAIN PAGE WITH ADS ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  body {
+    background: floralwhite;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vh;
+  }
+  
+  #logo {
+    width: 300px;
+  }
+  
+  .mainHeader {
+    background: white;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid darkmagenta;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Hyperlinks for "MyPookie" LOGO ( when you click on logo you go straight to "Main page") ˇˇˇˇˇˇ */
+  
+  #mainPageHyperlink {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 1px;
+  }
+  
+  #mainPageHyperlink2 {  /* Another "main page" hyperlink for headers that have search bar ˇˇˇˇˇˇ */
+    display: flex;
+    align-items: center;
+    width: 300px;
+    position: relative;
+    right: 101px;
+  }
+  
+  
+    /* SearchBar form ˇˇˇˇˇˇ */
+  
+   #searchBarContainer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 475px;
+    position: relative;
+    right: 90px;
+  }
+    
+  #searchBar {
+    width: 475px;
+    height: 42px;
+  }
+  
+  #searchBar input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    width: 400px;
+    height: 42px;
+    background: white;
+    outline: none;
+    float: left;
+  }
+  
+  #searchBarSubmit {
+    width: 75px;
+    height: 42px;
+    padding: 6px 10px 6px 10px;
+    background: darkorchid;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+    float: right;
+  }
+  
+    #searchBar i {
+    color: white;
+    font-size: 27px;
+  }
+  
+    #searchBar button:hover {
+    background: darkmagenta;
+  }
+  
+    #searchBar button:active {
+    background: darkorchid;
+  }
+  
+  #searchBar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Detail Search ˘˘˘˘˘˘ */
+  
+  #detailSearch {
+    width: 120px;
+    font-size: 17px;
+    color: darkmagenta;
+    top: 95px;
+  }
+  
+  #detailSearch:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+    /* Create ad button ˇˇˇˇˇˇ */
+  
+  #createAd {
+    position: relative;
+    right: 50px;
+    width: 140px;
+    height: 42px;
+    background: darkorchid;
+    border: none;
+  }
+  
+  #createAd a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #createAd:hover {
+    background: darkmagenta;
+  }
+  
+  #createAd:active {
+    background: darkorchid;
+  }
+  
+  /* Menu and navigation ˘˘˘˘˘˘ */
+  
+  #menu {
+    position: fixed;
+    top: 170px;
+    left: 50px;
+    width: 240px;
+    height: 430px;
+    background: transparent;
+  }
+  
+  #menu table {
+    table-layout: fixed;
+    width: inherit;
+    height: 350px;
+    background: transparent;
+  }
+  
+  #menu tr {
+    height: 50px;
+    width: inherit;
+    background: white;
+  }
+  
+  #menu th {
+    border: 2px solid darkmagenta;
+    font-size: 23px;
+    color: darkmagenta;
+  }
+  
+  #menu th:hover {
+    cursor: pointer;
+  }
+  
+  #menu img {
+    height: 44px;
+    float: left;
+    margin: 3px 18px 3px 3px;
+  }
+  
+  #menu img:hover {
+    cursor: pointer;
+  }
+  
+  #menu i {
+    margin-right: 24px;
+    margin-left: 7px;
+    font-size: 35px;
+    float: left;
+    color: black;
+    line-height: 49px;
+  }
+  
+  #menu i:hover {
+    cursor: pointer;
+  }
+  
+  #menu a {
+    float: left;
+    line-height: 50px;
+    width: inherit;
+    color: darkmagenta;
+    text-decoration: none;
+  }
+  
+  #menu h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  
+  /* Ads section ˘˘˘˘˘˘ */
+  
+  tr {
+    position: relative;
+  }
+  
+  td {
+  height: 150px;
+  }
+  
+  
+  td::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(144, 238, 144, 0.5); /* Light green color with some transparency */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
-}
-
-/* Show the overlay when hovering over the image */
-tr:hover::after {
-    opacity: 1; /* Make the overlay visible */
-}
-
-img {
-    width: 100px;
-    height: auto;
+    background-color: rgba(238, 144, 218, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  td:hover::after {
+    opacity: 1;
+  }
+  
+  .adsContainer {
+    width: fit-content;
+    position: relative;
+    left: 410px;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 1.5px;
+    margin-top: 130px;
+    box-shadow: darkmagenta 0px 0px 3px;
+  }
+  
+  .pictureContainer {
+    padding-left: 10px;
+  }
+  
+  .adPicture {
+    height: 150px;
+    width: 150px;
     display: block;
-}
+  }
+  
+  .adInformationContainer {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px;
+    color: darkmagenta;
+  }
+  
+  .adInformationContainer i {
+    color: black;
+  }
+  
+  .userName {
+    max-width: 150px;
+    font-size: 20px;
+    float: left;
+    padding-left: 2px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .userName:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .adName {
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    padding: 2px;
+  }
+  
+  .adComentContainer {
+    height: 150px;
+  }
+  
+  .adComment {
+    border-radius: 3px;
+    font-size: 18px;
+    width: 640px;
+    background: white;
+    border: gray 1px solid;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 133px;
+    padding: 8.5px 15px;
+    display: block;
+    margin-right: 10px;
+  }
+  
+  
+  /* Detail search section ˘˘˘˘˘˘ */
+  
+  #detailSearchSection {
+    display: none;
+    background: white;
+    width: 100vw;
+    height: 200px;
+    border-bottom: 2px solid darkmagenta;
+    z-index: 3;
+    position: fixed;
+    border-right: none;
+    top: 100px;
+    padding-top: 15px;
+  }
+  
+  #detailSearchForm {
+    background: white;
+    width: 100%;
+    height: 120px;
+    padding: 0 30px 0 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #bodyCover {
+    height: 100vh;
+    width: 100vw;
+    background: darkmagenta;
+    opacity: 0.4;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    top: 140px;
+    left: 0;
+  }
+  
+  /* Animal Kind form ˘˘˘˘˘˘ */
+  
+  #animalKind-select {
+    width: 210px;
+    height: 50px;
+    background: white;
+    border: 2px solid darkmagenta;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px 0 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #animalKind-text {
+    font-size: 20px;
+    color: darkmagenta;
+    font-weight: 500;
+  }
+  
+  #animalKindArrow {
+    color: darkmagenta;
+    font-weight: 600;
+    font-size: 23px;
+    transform: none;
+    transition: 0.3s;
+  }
+  
+  #animalKind-list {
+    list-style: none;
+    width: 210px;
+    background: white;
+    border: solid 2px darkmagenta;
+    border-radius: 4px;
+    position: absolute;
+    top: 100px;
+    height: 150px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #animalKind-list li {
+    height: 40px;
+    width: 90%;
+    font-size: 17px;
+    border-radius: 3px;
+    color: darkmagenta;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+  }
+  
+  #animalKind-list li:hover {
+    background: lightpink;
+  }
+  
+  #animalKind-list li i {
+    height: 18px;
+    width: 18px;
+    border: 1px solid darkmagenta;
+    font-weight: 600;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  
+  #dsArrow {
+    transition: 0.3s;
+  }
+  
+  /* Price range form ˘˘˘˘˘˘ */
+  
+  #priceRange {
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-top: 30px;
+  }
+  
+  #priceRangeInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+  
+  #priceRangeInputContainer i {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    color: darkmagenta;
+  }
+  
+  #priceRangeInputContainer input {
+    height: 35px;
+    width: 100px;
+    border: 2px solid darkmagenta;
+    font-weight: 600;
+    border-radius: 3px;
+    padding-left: 4px;
+  }
+  
+  #priceRangeText {
+    text-align: center;
+    font-size: 20px;
+    color: darkmagenta;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+  
+  .fwSlash {
+    text-align: center;
+    font-size: 20px;
+    color: darkmagenta;
+    font-weight: 500;
+    margin: 0 5px;
+  }
+  /* Time range form ˘˘˘˘˘˘ */
+  
+  #timeRange {
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-top: 40px;
+  }
+  
+  #timeRangeInput {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  
+  #timeRange input {
+    height: 35px;
+    width: 100px;
+    border: 2px solid darkmagenta;
+    font-weight: 600;
+    border-radius: 3px;
+    padding-left: 4px;
+  }
+  
+  #timeRangeText {
+    text-align: center;
+    font-size: 20px;
+    color: darkmagenta;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  
+  /* Place form ˘˘˘˘˘˘ */
+  
+  #placeForm {
+    border: solid 2px darkmagenta;
+    border-radius: 4px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 8px;
+  }
+  
+  #placeText {
+    font-size: 20px;
+    color: darkmagenta;
+    font-weight: 500;
+  }
+  
+  #placeForm i {
+    color: darkmagenta;
+    font-weight: 600;
+    font-size: 23px;
+    transform: none;
+    transition: 0.3s;
+  }
+  
+  
+  
+  /* CREATE AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  #createAdBody {  /* style for "Create Ad" body */
+    background-image: url("images/ai-generated-a-dog-and-cat-standing-on-a-purple-background-free-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+    position: fixed;
+  }
+  
+  #createAdHeader {
+    background: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid darkmagenta;
+  }
+  
+  #createAdBody #logo {
+    position: absolute;
+    left: 1px;
+    width: 300px;
+  }
+  
+  header h1 {
+    color: darkmagenta;
+  }
+  
+  #createAdContainer {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  /* Detail information section ˘˘˘˘˘˘ */
+  
+  #detailInformationContainer {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .detailInformationInput::placeholder {
+    opacity: 1;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .detailInformationInput::-ms-input-placeholder {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .detailInformationInput {
+    padding-left: 8px;
+    width: 210px;
+    height: 50px;
+    border: none;
+    box-shadow: darkmagenta 0px 0px 4px;
+    border-radius: 4px;
+    outline: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  /* Animal kind input ˘˘˘˘˘˘ */
+  
+  #createAd-animalKind-select {
+    width: 210px;
+    height: 50px;
+    background: white;
+    box-shadow: darkmagenta 0px 0px 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px 0 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #createAd-animalKind-text {
+    font-size: 20px;
+    color: darkmagenta;
+    font-weight: 500;
+  }
+  
+  #createAd-animalKindArrow {
+    color: darkmagenta;
+    font-weight: 600;
+    font-size: 23px;
+    transform: none;
+    transition: 0.3s;
+  }
+  
+  #createAd-animalKind-list {
+    list-style: none;
+    width: 210px;
+    background: white;
+    border: solid 2px darkmagenta;
+    border-radius: 4px;
+    position: absolute;
+    top: 100px;
+    height: 150px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #createAd-animalKind-list li {
+    height: 40px;
+    width: 90%;
+    font-size: 17px;
+    border-radius: 3px;
+    color: darkmagenta;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+  }
+  
+  #createAd-animalKind-list li:hover {
+    background: lightpink;
+  }
+  
+  #createAd-animalKind-list li i {
+    height: 18px;
+    width: 18px;
+    border: 1px solid darkmagenta;
+    font-weight: 600;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  
+  #dsArrow {
+    transition: 0.3s;
+  }
+  
+  /* Duration input ˘˘˘˘˘˘ */
+  
+  #duration {
+    padding-right: 55px;
+  }
+  
+  #durationText {
+    position: absolute;
+    right: 675px;
+    top: 41px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  /* Price Input ˘˘˘˘˘˘ */
+  
+  #price {
+    padding-right: 35px;
+  }
+  
+  #priceDollarSign {
+    position: absolute;
+    right: 365px;
+    top: 47px;
+    color: black;
+    font-size: 27px;
+    font-weight: 100;
+  }
+  
+  /* Insert Picture Input */
+  
+  #insertPictureContainer {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #insertPicture {
+    background: white;
+    height: 160px;
+    width: 160px;
+    box-shadow: darkmagenta 0px 0px 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #insertPicture p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+  /* Description Input */
+  
+  #descriptionContainer {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+  
+  #descriptionContainer textarea {
+    background: white;
+    height: 160px;
+    width: 470px;
+    box-shadow: darkmagenta 0px 0px 4px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    resize: none;
+    color: black;
+    padding: 4px;
+    outline: none;
+  }
+  
+  #descriptionContainer textarea::placeholder {
+    font-size: 20px;
+    text-align: center;
+    line-height: 7;
+    font-weight: 500;
+  }
+  
+  #descriptionContainer textarea::-ms-input-placeholder {
+    font-size: 20px;
+    text-align: center;
+    line-height: 7;
+    font-weight: 500;
+  }
+  
+  /* Continue Button */
+  
+  #continueButton {
+    position: absolute;
+    right: 230px;
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    background: darkorchid;
+    font-size: 19px;
+    border: none;
+    box-shadow: black 0px 0px 3px;
+  }
+  
+  #continueButton a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  #continueButton:hover {
+    cursor: pointer;
+    background: darkmagenta;
+  }
+  
+  #continueButton:active {
+    background: darkorchid;
+  }
+  
+  
+  
+  /* AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  #adContainer {
+    position: relative;
+    margin-top: 130px;
+    left: 530px;
+    display: grid;
+    width: fit-content;
+    box-shadow: darkmagenta 0px 0px 3px;
+    background: white;
+    padding: 20px;
+  }
+  
+  
+  
+  /* MY PROFILE PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  /* Menu */
+  
+  #profileTableHeader {
+    background-color: lightblue;
+  }
+  
+  
+  /* MY AD PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  #makeChangesContainer{
+    width: 170px;
+    height: 40px;
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: floralwhite;
+    border: 1px solid darkmagenta;
+    margin: 0 4px;
+    position: relative;
+    margin-right: 30px;
+  }
+  
+  #makeChangesContainer span {
+    color: darkmagenta;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  #makeChangesContainer span i {
+    color: black;
+    font-size: 28px;
+    padding-right: 4px;
+  }
+  
+  #myAdName {
+    font-size: 35px;
+    color: black;
+    font-weight: 500;
+    line-height: 1.05;
+  }
+  
+  #myAdNameContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  /* CHAT PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  #chatLogo {
+    width: 300px;
+  }
+  
+  #inboxHeader {
+    background-color: lightblue;
+  }
+  
+  #inboxContainer {
+    height: fit-content;
+    width: 1000px;
+    box-shadow: darkmagenta 0px 0px 3px;
+    background-color: white;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 130px;
+    left: 420px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messageContainer {
+    width: 950px;
+    height: 60px;
+    border: 1px solid darkmagenta;
+    background-color: floralwhite;
+    margin: 5px auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    position: relative;
+    margin-right: 50px;
+  }
+  
+  .message span {
+    font-size: 18px;
+    color: dimgray;
+    font-weight: 500;
+  }
+  
+  .date {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: dimgray;
+  }
+  
+  
+  /* CHAT WITH A USER PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  #inboxWithAUserContainer {
+    background-color: white;
+    height: fit-content;
+    width: 1000px;
+    box-shadow: darkmagenta 0px 0px 3px;
+    position: relative;
+    margin-top: 130px;
+    left: 420px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  
+  #returnToInbox {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  
+  #returnToInbox a {
+    text-decoration: none;
+  }
+  
+  #returnToInbox a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  #returnToInbox i, #returnToInbox a {
+    font-size: 17px;
+    color: darkmagenta;
+    font-weight: 500;
+  }
+  
+  #rateUser {
+    width: 950px;
+    border-top: 1px solid darkmagenta;
+    border-bottom: 1px solid darkmagenta;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: 5px auto;
+  }
+  
+  .rate {
+    font-size: 17px;
+    color: darkmagenta;
+  }
+  
+  .rate i {
+    margin-right: 5px;
+    color: darkmagenta;
+  }
+  
+  #chatInfo {
+    width: 950px;
+    border-top: 1px solid darkmagenta;
+    border-bottom: 1px solid darkmagenta;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: 5px auto;
+    font-size: 20px;
+  }
+  
+  #chatPictureAndName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 115px;
+  }
+  
+  .chatName {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  #chatInfo i {
+    margin-right: 5px;
+  }
+  
+  #chatPicture {
+    height: 40px;
+  }
+  
+  #chat {
+    width: 950px;
+    height: 400px;
+    border: 1px solid darkmagenta;
+    border-radius: 3px;
+    margin: 5px auto;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url("images/Pet paws.jpg");
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+  }
+  
+  #chat::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  #chat::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  
+  #chat::-webkit-scrollbar-thumb {
+    background-color: gray;
+  }
+  
+  .chatDateContainer {
+    width: inherit;
+    position: relative;
+    margin: 15px 0;
+  }
+  
+  .chatDate {
+    height: 22px;
+    width: 120px;
+    border-radius: 20px;
+    background-color:  lightgray;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chatDate span {
+    color: black;
+    font-size: 13px;
+  }
+  
+  .otherUsersMessageContainer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  .myMessageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .otherUsersMessage {
+    max-width: 650px;
+    height: fit-content;
+    min-height: 50px;
+    font-size: 13px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px 15px 15px 0;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: inline;
+    white-space: initial;
+    word-break: break-all;
+    margin: 5px 0;
+  }
+  
+  .myMessage {
+    max-width: 650px;
+    height: fit-content;
+    min-height: 50px;
+    font-size: 13px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 15px 15px 0 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: inline;
+    white-space: initial;
+    word-break: break-all;
+    margin: 5px 0;
+  }
+  
+  .myMessageTimeContainer {
+    text-align: end;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .messageTime {
+    font-size: 13px;
+    color: dimgray;
+  }
+  
+  .myMessageTimeContainer i {
+    color: #0066b2; /* Bayern blue */
+    font-size: 24px;
+  }
+  
+  .writeAMessageContainer {
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .writeAMessageContainer textarea {
+    width: 950px;
+    height: 120px;
+    border: 1px solid darkmagenta;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    resize: none;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .sendMessageContainer {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+  }
+  
+  .sendMessage {
+    background-color: darkmagenta;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    color: white;
+    font-size: 17px;
+    line-height: 1;
+    border-radius: 3px;
+    margin-top: 5px;
+  }
+  
+  .sendMessage:hover {
+    background-color: darkorchid;
+  }
+  
+  .sendMessage:active {
+    background-color: darkmagenta;
+  }
+  
+  .sendMessage i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  
+  
+  /* NOTIFICATIONS PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  #notificationsHeader {
+    background-color: lightblue;
+  }
+  
+  #notificationsContainer {
+    height: fit-content;
+    width: 1000px;
+    box-shadow: darkmagenta 0px 0px 3px;
+    background-color: white;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 130px;
+    left: 420px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notification_Container {
+    width: 950px;
+    min-height: 60px;
+    border: 1px solid darkmagenta;
+    background-color: floralwhite;
+    margin: 5px auto;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .notificationTitle {
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .notification {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    position: relative;
+    margin-right: 50px;
+  }
+  
+  .notification span {
+    font-size: 18px;
+    color: black;
+  }
+  
+  .notificationDate {
+    width: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: dimgray;
+  }
+  
+  /* MY REVIEWS PAGE ˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘˘ */
+  
+  #reviewsHeader {
+    background-color: lightblue;
+  }
+  
+  #reviewsContainer {
+    height: 1000px;
+    width: 1000px;
+    box-shadow: darkmagenta 0px 0px 3px;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 130px;
+    left: 420px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #reviewsInformation {
+    width: 950px;
+    height: 90px;
+    background-color: white;
+    border: 1px solid darkmagenta;
+    margin: 5px auto 15px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #reviewsTitle {
+    width: 930px;
+    height: fit-content;
+  }
+  
+  #reviewsTitle span {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  #positiveAndNegativeReviews {
+    width: 930px;
+    height: fit-content;
+    display: flex;
+  }
+  
+  #positiveReviews {
+    border-bottom: 2px solid darkmagenta;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #negativeReviews {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #positiveReviews i {
+    font-size: 24px;
+    color: darkgreen;
+    cursor: pointer;
+  }
+  
+  #positiveReviews span {
+    font-size: 18px;
+    cursor: pointer;
+    color: darkmagenta;
+  }
+  
+  #negativeReviews i {
+    font-size: 24px;
+    color: darkred;
+    cursor: pointer;
+  }
+  
+  #negativeReviews span {
+    font-size: 18px;
+    cursor: pointer;
+    color: dimgray;
+  }
+  
+  .reviewContainer {
+    width: 950px;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid darkmagenta;
+    margin: 5px auto;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .reviewNameAndDate {
+    width: 930px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px
+  }
+  
+  .reviewName {
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .reviewName i {
+    color: darkgreen;
+    font-size: 21px;
+    margin-right: 5px;
+  }
+  
+  .reviewDate {
+    color: dimgray;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .reviewComment {
+    width: fit-content;
+    background-color: pink;
+    padding: 5px;
+  }

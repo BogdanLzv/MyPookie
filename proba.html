@@ -1,29 +1,161 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PROBA</title>
+        <title>MyPookie</title>
         <link rel="stylesheet" href="CSS/proba.css">
+        <link rel="icon" href="CSS/images/LOGO 3.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
 
-        <table>
-            <tr class="first">
-                <td><img src= "CSS/images/Ad pictures/PCS-Daytime-Dog-Visits-Square.webp"></td>
-                <td>bb</td>
-                <td>cc</td>
-            </tr>
-            <tr class="second">
-                <td>aa</td>
-                <td>bb</td>
-                <td>cc</td>
-            </tr>
+        <header class="mainHeader">
+
+            <a href="main page.html" id="mainPageHyperlink2">
+                <img src="CSS/images/LOGO 1.png" id="logo">
+            </a>
+
+            <div id="searchBarContainer">
+                <form id="searchBar">
+                    <input type="text" placeholder="Search ads..">
+                    <button type="submit" id="searchBarSubmit"><i class='bx bx-search'></i></button>
+                </form>
+                <p id="detailSearch">Detail search<i class='bx bx-chevron-down' id="dsArrow"></i></p>
+            </div>
+
+            <button id="createAd">
+                <a href="Create ad page.html" target=”_blank”>+ Create ad</a>
+            </button>
+
+        </header>
+
+        <!--- Menu And Navigation ˘˘˘˘˘˘ --->
+        
+        <div id="menu">
+            <h2>Bogdan Lazov</h2>
+            <table>
+                <tr id="profileTableRow">
+                    <th>
+                        <img src="CSS/images/RC-Profile-Square.jpg">
+                        <a href="My profile page.html" target=”_blank” id="myProfileText">My profile</a>
+                    </th>
+                </tr>
+                <tr id="inboxTableRow">
+                    <th>
+                        <i class='bx bxs-inbox'></i>
+                        <a href="Inbox page.html" target=”_blank” id="inboxText">Inbox</a>
+                    </th>
+                </tr>
+                <tr id="notificationsTableRow">
+                    <th>
+                        <i class='bx bx-notification'></i>
+                        <a href="Notifications page.html" target=”_blank” id="notificationsText">Notifications</a>
+                    </th>
+                </tr>
+                <tr id="reviewsTableRow">
+                    <th>
+                        <i class='bx bx-like'></i>
+                        <a href="My reviews page.html" target=”_blank” id="reviewsText">My reviews</a>
+                    </th>
+                </tr>
+                <tr id="savedAdsTableRow">
+                    <th>
+                        <i class='bx bxs-bookmarks'></i>
+                        <a href="" target=”_blank” id="savedAdsText">Saved ads</a>
+                    </th>
+                </tr>
+                <tr id="settingsTableRow">
+                    <th>
+                        <i class='bx bx-cog' ></i>
+                         <a href="" target=”_blank” id="settingsText">Settings</a>
+                    </th>
+                </tr>
+                <tr id="logOutTableRow">
+                    <th>
+                        <i class='bx bx-exit' ></i>
+                        <a href="" target=”_blank” id="logOutText">Log out</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+            <!--- Detail Search Section ˘˘˘˘˘˘ --->
+
+            <div id="detailSearchSection">
+
+                <form id="detailSearchForm">
+
+                    <div>
+                        <div id="animalKind-select">
+                            <span id="animalKind-text">Animal kind</span>
+                            <i class='bx bx-chevron-down' id="animalKindArrow"></i>
+                        </div>
+                        <ul id="animalKind-list">
+                            <li>
+                                <i class='bx bx-check'></i>
+                                Dog
+                            </li>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                Cat
+                            </li>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                Parrot
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="priceRange">
+                        <span id="priceRangeText">Price Range</span>
+                        <div id="priceRangeInput">
+                            <input type="text" placeholder="from">
+                            <span class="fwSlash">/</span>
+                            <input type="text" placeholder="to">
+                        </div>
+                    </div>
+
+                    <div id="timeRange">
+                        <span id="timeRangeText">Time Range<br>(days)</span>
+                        <div id="timeRangeInput">
+                            <input type="text" placeholder="from">
+                            <span class="fwSlash">/</span>
+                            <input type="text" placeholder="to">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="placeForm">
+                            <span id="placeText">Place</span>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="bodyCover">
+            </div>
+
+            <div id="PROBA">
+
+                <img src="CSS/images/Ad_pictures/07CAT-STRIPES-mediumSquareAt3X-v2.jpg" id="probaSlika">
+            
+            </div>
+
+            <div id="sledecaSlika">
+
+            </div>
+
+            <div class="ostaleSlike">
+
+                <img src="CSS/images/Ad_pictures/1000_F_163117064_syJkTuCddASYjvl4WqyRmnuy8cDXpoQY.jpg" id="manjaSlika1">
+
+                <img src="CSS/images/Ad_pictures/domestic-dog_thumb_square.webp" id="manjaSlika2">
 
 
+            </div>
 
-
-        </table>
-
-
+    	<script src="JavaScript/proba.js"></script>
     </body>
 </html>
