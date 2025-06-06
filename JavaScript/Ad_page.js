@@ -1,3 +1,4 @@
+
 import {
     tableRowHover,
     tableRowMouseOut,
@@ -5,7 +6,6 @@ import {
     tableRowMouseUp,
     detailListDisplay
 } from './Modules/Modules.js';
-
 
 
 // MOUSE TRANSITIONS FOR THE NAV OF THE SITE OR "THE MENU" ˘˘˘˘˘˘˘˘
@@ -123,6 +123,8 @@ const animalKindList = document.getElementById("animalKind-list");
 const animalKindArrow = document.getElementById("animalKindArrow");
 const animalKindText = document.getElementById("animalKind-text");
 const bodyCover = document.getElementById("bodyCover")
+
+
 
 // Function for opening detail search section ˘˘˘˘˘˘
 
