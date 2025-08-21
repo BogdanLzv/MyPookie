@@ -149,3 +149,39 @@ detailSearch.onclick = function() {
 // Animal kind ˘˘˘˘˘˘
 
 detailListDisplay(animalKind, animalKindList, animalKindArrow, animalKindText);
+
+
+// TRANSITION FOR PICTURES INSIDE AD ˘˘˘˘˘˘˘˘
+
+// Capturing elements in ad section ˘˘˘˘˘˘
+
+const nextPicture = document.getElementById("rightArrow");
+const previousPicture = document.getElementById("leftArrow");
+const adImage = document.getElementById("adImage");
+const smallPicture_1 = document.getElementById("smallPicture_1");
+const smallPicture_2 = document.getElementById("smallPicture_2");
+const smallPicture_3 = document.getElementById("smallPicture_3");
+const smallPicture_4 = document.getElementById("smallPicture_4");
+
+
+nextPicture.addEventListener("click", () => {
+    
+    const tempId1 = adImage.src;
+    
+    adImage.src = smallPicture_1.src;
+    smallPicture_1.src = smallPicture_2.src;
+    smallPicture_2.src = smallPicture_3.src;
+    smallPicture_3.src = smallPicture_4.src;
+    smallPicture_4.src = tempId1;
+})
+
+previousPicture.addEventListener("click", () => {
+    
+    const tempId1 = adImage.src;
+
+    adImage.src = smallPicture_4.src;
+    smallPicture_4.src = smallPicture_3.src;
+    smallPicture_3.src = smallPicture_2.src;
+    smallPicture_2.src = smallPicture_1.src;
+    smallPicture_1.src = tempId1;
+})
